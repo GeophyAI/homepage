@@ -1,0 +1,40 @@
+{%- comment -%}
+  Photo grid from _data/gallery.yml, newest first. Optional: limit=N.
+  Images live in assets/img/gallery/; imagemagick makes the 480/800/1400 webp versions.
+  Own CSS grid: this theme version ships Tailwind, not Bootstrap's col-* classes.
+{%- endcomment -%}
+{%- assign is_zh = false -%}
+{%- if page.lang == 'zh-CN' -%}{%- assign is_zh = true -%}{%- endif -%}
+{%- assign photos = site.data.gallery | sort: 'date' | reverse -%}
+{%- if include.limit -%}{%- assign photos = photos | slice: 0, include.limit -%}{%- endif -%}
+<div class="gallery">
+  {%- for p in photos -%}
+    {%- if is_zh -%}
+      {%- assign t = p.title_zh | default: p.title -%}
+      {%- assign where = p.place_zh | default: p.place -%}
+      {%- assign when = p.date | date: '%Y年%-m月' -%}
+    {%- else -%}
+      {%- assign t = p.title -%}
+      {%- assign where = p.place -%}
+      {%- assign when = p.date | date: '%b %Y' -%}
+    {%- endif -%}
+    {%- capture alt -%}{% if t != blank %}{{ t }}, {% endif %}{{ where }}, {{ when }}{%- endcapture -%}
+    {%- assign img = p.image | prepend: 'assets/img/gallery/' -%}
+    <div class="gallery-item">
+      {% include figure.liquid path=img class="rounded z-depth-1" zoomable=true alt=alt sizes="(min-width: 768px) 440px, 95vw" %}
+      <div class="gallery-caption">
+        {%- if t != blank -%}<div class="gallery-title">{{ t }}</div>{%- endif -%}
+        <div class="gallery-meta">{{ where }} · {{ when }}</div>
+      </div>
+    </div>
+  {%- endfor -%}
+</div>
+
+<style>
+  .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.75rem 1.5rem; margin-top: 1rem; }
+  @media (max-width: 575px) { .gallery { grid-template-columns: 1fr; } }
+  .gallery figure { margin: 0 0 0.45rem; }
+  .gallery img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+  .gallery-title { font-weight: 600; font-size: 0.95rem; line-height: 1.35; }
+  .gallery-meta { color: var(--global-text-color-light); font-size: 0.85rem; }
+</style>

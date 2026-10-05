@@ -1,0 +1,118 @@
+---
+layout: page
+lang: zh-CN
+permalink: /zh/cv/
+title: 简历
+description: 王绍文的个人简历。
+nav: false
+---
+{%- comment -%} Chinese CV. Content: _data/cv_zh.yml. Markup mirrors the al_folio_cv cards on /cv/. {%- endcomment -%}
+{% assign cv = site.data.cv_zh %}
+<p>
+  <a class="btn btn-sm btn-outline-primary" href="{{ '/assets/pdf/Shaowen_Wang_CV.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">
+    <i class="fa-solid fa-file-pdf"></i> 下载 PDF 版简历（英文）
+  </a>
+</p>
+
+<div class="cv">
+  <div class="card mt-3 p-3">
+    <h3 class="card-title font-weight-medium">基本信息</h3>
+    <table class="table table-cv table-sm table-borderless">
+      <tr><td class="p-1 pr-2 font-weight-bold"><b>姓名</b></td><td class="p-1 pl-2 font-weight-light">{{ cv.name }}</td></tr>
+      <tr><td class="p-1 pr-2 font-weight-bold"><b>职位</b></td><td class="p-1 pl-2 font-weight-light">{{ cv.label }}</td></tr>
+      <tr><td class="p-1 pr-2 font-weight-bold"><b>邮箱</b></td><td class="p-1 pl-2 font-weight-light">{{ cv.email }}</td></tr>
+      <tr><td class="p-1 pr-2 font-weight-bold"><b>地点</b></td><td class="p-1 pl-2 font-weight-light">{{ cv.location }}</td></tr>
+    </table>
+  </div>
+
+  <div class="card mt-3 p-3">
+    <h3 class="card-title font-weight-medium">简介</h3>
+    <p>{{ cv.summary }}</p>
+  </div>
+
+  <a class="anchor" id="experience"></a>
+  <div class="card mt-3 p-3">
+    <h3 class="card-title font-weight-medium">工作经历</h3>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      {% for e in cv.experience %}
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+            <table class="table-cv"><tbody>
+              <tr><td><span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ e.start }} - {{ e.end }}</span></td></tr>
+              <tr><td><p class="location"><i class="fa-solid fa-location-dot iconlocation"></i> {{ e.location }}</p></td></tr>
+            </tbody></table>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ e.position }}</h6>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ e.org }}</h6>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ e.dept }}</h6>
+            <ul class="items">
+              {% for h in e.highlights %}<li><span class="item">{{ h | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>{% endfor %}
+            </ul>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <a class="anchor" id="education"></a>
+  <div class="card mt-3 p-3">
+    <h3 class="card-title font-weight-medium">教育经历</h3>
+    <ul class="card-text font-weight-light list-group list-group-flush">
+      {% for e in cv.education %}
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column">
+            <table class="table-cv"><tbody>
+              <tr><td><span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px">{{ e.start }} - {{ e.end }}</span></td></tr>
+              <tr><td><p class="location"><i class="fa-solid fa-location-dot iconlocation"></i> {{ e.location }}</p></td></tr>
+            </tbody></table>
+          </div>
+          <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0">
+            <h6 class="title font-weight-bold ml-1 ml-md-4">{{ e.degree }}</h6>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">{{ e.school }}</h6>
+            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">{{ e.major }}</h6>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <a class="anchor" id="publications"></a>
+  <div class="card mt-3 p-3">
+    <h3 class="card-title font-weight-medium">代表性论文</h3>
+    {% include selected_papers.liquid %}
+    <p class="mt-2 mb-0"><a href="{{ '/zh/publications/' | relative_url }}">全部论文 →</a></p>
+  </div>
+
+  <a class="anchor" id="interests"></a>
+  <div class="card mt-3 p-3">
+    <h3 class="card-title font-weight-medium">研究方向</h3>
+    <div class="card-text font-weight-light">
+      {% for i in cv.interests %}<div class="interest-item"><strong>{{ i.name }}：</strong>{{ i.keywords }}</div>{% endfor %}
+    </div>
+  </div>
+
+  <a class="anchor" id="skills"></a>
+  <div class="card mt-3 p-3">
+    <h3 class="card-title font-weight-medium">专业技能</h3>
+    <div class="card-text font-weight-light">
+      {% for s in cv.skills %}<div class="skill-item"><strong>{{ s.name }}：</strong>{{ s.keywords }}</div>{% endfor %}
+    </div>
+  </div>
+
+  <a class="anchor" id="languages"></a>
+  <div class="card mt-3 p-3">
+    <h3 class="card-title font-weight-medium">语言</h3>
+    <div class="card-text font-weight-light">
+      {% for l in cv.languages %}<div class="language-item"><strong>{{ l.name }}：</strong>{{ l.level }}</div>{% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .interest-item, .skill-item, .language-item { padding: 0.5rem 0; }
+</style>

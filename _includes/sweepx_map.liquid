@@ -1,0 +1,26 @@
+{%- comment -%}
+  SWEEPX ecosystem diagram with clickable components. Regions and URLs: _data/sweepx_links.yml.
+  Optional: include.alt.
+{%- endcomment -%}
+<div class="sweepx-map">
+  {%- assign sweepx_alt = include.alt | default: 'SWEEPX ecosystem: the sweep-solver engine and the packages built around it' %}
+  {%- comment -%} Same size and layout in both themes, so the link regions fit either image. Dark variant: _tools/make_sweepx_dark.py {%- endcomment %}
+  <img src="{{ '/assets/img/research/sweepx_ecosystem.png' | relative_url }}" class="only-light rounded z-depth-1" alt="{{ sweepx_alt }}" loading="lazy">
+  <img src="{{ '/assets/img/research/sweepx_ecosystem_dark.png' | relative_url }}" class="only-dark rounded z-depth-1" alt="{{ sweepx_alt }}" loading="lazy">
+  {%- for c in site.data.sweepx_links %}
+    {%- if c.url and c.url != '' %}
+  <a class="sweepx-hit{% if c.dark %} sweepx-dark{% endif %}" href="{{ c.url }}" target="_blank" rel="noopener noreferrer"
+     title="{{ c.name }}" aria-label="{{ c.name }}"
+     style="left: {{ c.box[0] }}%; top: {{ c.box[1] }}%; width: {{ c.box[2] }}%; height: {{ c.box[3] }}%;">{% unless c.icon == false %}<i class="fa-solid fa-arrow-up-right-from-square"></i>{% endunless %}</a>
+    {%- endif %}
+  {%- endfor %}
+</div>
+<style>
+  .sweepx-map { position: relative; margin: 0.5rem 0 1rem; }
+  .sweepx-map img { width: 100%; height: auto; }   /* display comes from al-folio's .only-light / .only-dark */
+  .sweepx-hit { position: absolute; border-radius: 0.6vw; transition: box-shadow 0.15s, background-color 0.15s; }
+  .sweepx-hit:hover, .sweepx-hit:focus { background-color: rgba(14, 138, 120, 0.08); box-shadow: 0 0 0 2px rgba(14, 138, 120, 0.75); }
+  .sweepx-hit i { position: absolute; top: 8%; right: 2.5%; font-size: clamp(8px, 1.1vw, 13px); color: #0e8a78; opacity: 0.75; }
+  .sweepx-hit.sweepx-dark i { color: #fff; }
+  .sweepx-hit:hover i, .sweepx-hit:focus i { opacity: 1; }
+</style>

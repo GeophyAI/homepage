@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Researcher in Computational Geophysics · <a href='https://deepwave.kaust.edu.sa/pages/people/detail/shaowen-wang-%28%E7%8E%8B%E7%BB%8D%E6%96%87%29'>KAUST</a>
+subtitle: Postdoctoral Fellow in Computational Geophysics · <a href='https://deepwave.kaust.edu.sa/pages/people/detail/shaowen-wang-%28%E7%8E%8B%E7%BB%8D%E6%96%87%29'>KAUST</a>
 
 profile:
   align: right
@@ -17,7 +17,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: false # includes a list of news items
+  enabled: true # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -27,14 +27,14 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a postdoctoral researcher at the
+I am a postdoctoral fellow at the
 [King Abdullah University of Science and Technology (KAUST)](https://deepwave.kaust.edu.sa/pages/people/detail/shaowen-wang-%28%E7%8E%8B%E7%BB%8D%E6%96%87%29),
 working on computational seismology and machine learning for the wave equation.
 
 My research develops **differentiable wave-physics solvers** and
 **[implicit neural representations (INRs)](https://github.com/DeepWave-KAUST/ifwi-pub)**
 for full-waveform inversion (FWI) and seismic imaging. I am the
-author of [SWEEP](https://github.com/GeophyAI), a unified framework for differentiable
+author of [SWEEP](https://sweepx.deepwave.group/), a unified framework for differentiable
 wave simulation, and I work on multiresolution hash-encoded implicit FWI and neural
 reparameterization.
 

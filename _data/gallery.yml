@@ -1,0 +1,63 @@
+# Photos on /gallery/ and /zh/gallery/. The page sorts them by date, newest first,
+# so the order of entries here does not matter.
+#
+# To add a photo:
+#   1. put a 4:3 JPEG (e.g. 2000x1500, metadata stripped) in assets/img/gallery/
+#   2. add an entry below. title / title_zh may be left empty: the caption then shows
+#      only the place and the month.
+
+- date: 2026-08-19
+  image: 2026-08-image-houston.jpg
+  title: IMAGE 2026
+  title_zh: IMAGE 2026
+  place: Houston, USA
+  place_zh: 美国休斯顿
+
+- date: 2025-10-21
+  image: 2025-10-chengdu.jpg
+  title: CGU Annual Meeting 2025
+  title_zh: 2025 中国地球科学联合学术年会
+  place: Chengdu, China
+  place_zh: 成都
+
+- date: 2025-06-06
+  image: 2025-06-eage-toulouse.jpg
+  title: EAGE Annual 2025
+  title_zh: EAGE 2025 年会
+  place: Toulouse, France
+  place_zh: 法国图卢兹
+
+- date: 2024-06-11
+  image: 2024-06-eage-oslo.jpg
+  title: EAGE Annual 2024
+  title_zh: EAGE 2024 年会
+  place: Oslo, Norway
+  place_zh: 挪威奥斯陆
+
+- date: 2024-04-20
+  image: 2024-04-huangdao.jpg
+  title: ""
+  title_zh: ""
+  place: Qingdao, China
+  place_zh: 青岛
+
+- date: 2023-10-27
+  image: 2023-10-zhanjiang.jpg
+  title: ""
+  title_zh: ""
+  place: Zhanjiang, China
+  place_zh: 湛江
+
+- date: 2023-08-19
+  image: 2023-08-changbaishan.jpg
+  title: ""
+  title_zh: ""
+  place: Changbaishan, China
+  place_zh: 长白山
+
+- date: 2021-06-30
+  image: 2021-06-huangdao.jpg
+  title: 4th CGS Conference on Petroleum Geophysics
+  title_zh: 中国地球物理学会第四届油气地球物理学术年会
+  place: Qingdao, China
+  place_zh: 青岛

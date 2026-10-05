@@ -1,0 +1,136 @@
+# Source for the downloadable CV (assets/pdf/Shaowen_Wang_CV.pdf).
+# Render (from repo root; output paths are relative to this file's directory):
+#   uvx --python 3.12 --from 'rendercv[full]' rendercv render _cv/Shaowen_Wang_CV.yaml \
+#     --output-folder build --pdf-path ../assets/pdf/Shaowen_Wang_CV.pdf -nomd -nohtml -nopng
+# (Typst is the intermediate the PDF is compiled from, so don't pass -notyp.)
+# yaml-language-server: $schema=https://raw.githubusercontent.com/rendercv/rendercv/refs/tags/v2.8/schema.json
+cv:
+  name: Shaowen Wang
+  headline: Postdoctoral Fellow in Computational Geophysics, King Abdullah University of Science and Technology (KAUST)
+  email: shaowen.wang@kaust.edu.sa
+  website: https://geophyai.com/
+  social_networks:
+    - network: Google Scholar
+      username: avZKwOsAAAAJ
+    - network: GitHub
+      username: GeophyAI
+    - network: LinkedIn
+      username: shaowinw
+  sections:
+    research_interests:
+      - Differentiable wave-physics solvers and implicit neural representations (INRs) for full-waveform inversion (FWI) and seismic imaging; deep learning for seismic data processing; GPU and high-performance computing.
+
+    experience:
+      - company: KAUST
+        position: Postdoctoral Fellow, Physical Science and Engineering Division
+        start_date: 2024
+        end_date: present
+        location: Thuwal, Saudi Arabia
+        highlights:
+          - Differentiable wave-physics solvers and implicit neural representations for FWI and seismic imaging
+          - Author of [SWEEP](https://sweepx.deepwave.group/) (differentiable wave simulation framework) and [IFWI](https://github.com/DeepWave-KAUST/ifwi-pub) (implicit FWI); GPU and HPC for large-scale inversion
+
+    education:
+      - institution: Ocean University of China
+        area: Marine Geophysics
+        degree: PhD
+        start_date: 2020
+        end_date: 2024
+      - institution: Ocean University of China
+        area: Geo-detection and Information Technology
+        degree: MSc
+        start_date: 2018
+        end_date: 2020
+      - institution: Shandong University of Science and Technology
+        area: Prospecting Technology and Engineering
+        degree: BSc
+        start_date: 2014
+        end_date: 2018
+
+    journal_articles:
+      - "**Shaowen Wang**, T. Alkhalifah (2026). **[Implicit Full Waveform Inversion Imaging](https://doi.org/10.1093/gji/ggag277)**. *Geophysical Journal International*."
+      - "**Shaowen Wang**, J. Tan, P. Song, B. He, Q. Wang, G. Du (2024). **[Deep Learning for Noise Attenuation from the Ocean Bottom Node 4C Data](https://doi.org/10.1111/1365-2478.13336)**. *Geophysical Prospecting*."
+      - "J. Tan, J. Wang, P. Song, **Shaowen Wang**, D. Xia, G. Du, Q. Wang (2024). **[Surface-related Multiple Prediction for Ocean-bottom Node Data Based on Demigration using Downgoing Wave Imaging Data](https://doi.org/10.1111/1365-2478.13359)**. *Geophysical Prospecting*."
+      - "**Shaowen Wang**, Y. Jiang, P. Song, J. Tan, Z. Liu, B. He (2023). **[Memory Optimization in RNN-based Full Waveform Inversion using Boundary Saving Wavefield Reconstruction](https://doi.org/10.1109/TGRS.2023.3317529)**. *IEEE Transactions on Geoscience and Remote Sensing*."
+      - "**Shaowen Wang**, P. Song, J. Tan, B. He, D. Xia, Q. Wang, G. Du (2023). **[Deep Learning-based Attenuation for Shear-wave Leakage from Ocean-bottom Node Data](https://doi.org/10.1190/geo2022-0252.1)**. *Geophysics*."
+      - "**Shaowen Wang**, P. Song, J. Tan, D. Xia, G. Du, Q. Wang (2023). **[Deblending of Seismic Data in the Wavelet Domain via a Convolutional Neural Network Based on Data Augmentation](https://doi.org/10.1111/1365-2478.13277)**. *Geophysical Prospecting*."
+      - "Q. Q. Wang, P. Song, Q. F. Hua, B. H. Liu, G. B. Li, **Shaowen Wang**, G. N. Du (2023). **[Full Waveform Inversion Based on Adam Algorithm with Optimized Parameters](https://doi.org/10.6038/cjg2022Q0879)**. *Chinese Journal of Geophysics*."
+      - "**Shaowen Wang**, P. Song, J. Tan, B. He, Q. Wang, G. Du (2022). **[Attention-based Neural Network for Erratic Noise Attenuation from Seismic Data with a Shuffled Noise Training Data Generation Strategy](https://doi.org/10.1109/TGRS.2022.3197929)**. *IEEE Transactions on Geoscience and Remote Sensing*."
+      - "**Shaowen Wang**, P. Song, J. Tan, C. Xie, B. Zhao, S. B. Mao (2022). **[The Least-squares Reverse Time Migration with Gradient Optimization Based on QHAdam](https://doi.org/10.6038/cjg2022P0364)**. *Chinese Journal of Geophysics*."
+      - "C. Xie, P. Song, Z. H. Zou, J. Tan, **Shaowen Wang**, B. Zhao (2022). **[Cross-correlation Weighted Reverse Time Migration with Wavefield Decomposition Based on Optical Flow Vector](https://doi.org/10.6038/cjg2022P0328)**. *Chinese Journal of Geophysics*."
+      - "D. Xia, P. Song, X. Li, J. Tan, C. Xie, **Shaowen Wang**, K. Liu, B. Zhao, S. Mao (2022). **[Time Domain Full Waveform Inversion Based on Gradient Preconditioning with an Angle-dependent Weighting Factor](https://doi.org/10.1007/s11802-022-4956-8)**. *Journal of Ocean University of China*."
+      - "**Shaowen Wang**, P. Song, J. Tan, C. Xie, S. Mao, Q. Wang (2021). **[Gaussian-type Weighted Hybrid Absorbing Boundary for Elastic Wave Simulation and its Acceleration on GPU](https://doi.org/10.13810/j.cnki.issn.1000-7210.2021.03.007)**. *Oil Geophysical Prospecting*."
+      - "C. Xie, P. Song, X. Li, J. Tan, **Shaowen Wang**, B. Zhao (2021). **[Angle-weighted Reverse Time Migration with Wavefield Decomposition Based on the Optical Flow Vector](https://doi.org/10.3389/feart.2021.732123)**. *Frontiers in Earth Science*."
+      - "C. Xie, P. Song, X. Li, J. Tan, **Shaowen Wang**, B. Zhao (2021). **[Least-squares Reverse Time Migration using the Gradient Preconditioning Based on Transmitted Wave Energy](https://doi.org/10.3389/feart.2021.732425)**. *Frontiers in Earth Science*."
+      - "R. Zhang, P. Song, B. Liu, X. Zhang, J. Tan, Z. Zou, C. Xie, **Shaowen Wang** (2020). **[Low-frequency Swell Noise Suppression Based on U-Net](https://doi.org/10.1007/s11770-020-0825-7)**. *Applied Geophysics*."
+
+    conference_proceedings:
+      - "**Shaowen Wang**, T. Alkhalifah (2026). **Self-supervised DAS Data Lossy Compression Based on Anisotropic Multi-resolution Hash Encoding**. *International Meeting for Applied Geoscience & Energy (IMAGE)*."
+      - "L. Wang, **Shaowen Wang**, F. Min, T. Alkhalifah (2026). **Learned Regularizations for Hash-encoding Implicit FWI using Well-constrained Diffusion Models**. *International Meeting for Applied Geoscience & Energy (IMAGE)*."
+      - "L. Wang, O. M. Saad, **Shaowen Wang**, F. Min, T. Alkhalifah (2026). **Seismic Data Interpolation using Neural Representations with Hybrid Fourier–Hash Encoding**. *International Meeting for Applied Geoscience & Energy (IMAGE)*."
+      - "**Shaowen Wang**, T. Alkhalifah (2026). **[Pretraining for Faster Implicit Full Waveform Inversion under Multiresolution Hash Encoding](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610129)**. *87th EAGE Annual Conference & Exhibition*."
+      - "**Shaowen Wang**, T. Alkhalifah (2026). **[Spectral Warm-up for Neural-Reparameterized Full Waveform Inversion](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610132)**. *87th EAGE Annual Conference & Exhibition*."
+      - "L. Wang, O. M. Saad, **Shaowen Wang**, F. Min, T. Alkhalifah (2026). **[A Hybrid Fourier-Hash Encoded Implicit Neural Representations for Seismic Data](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610369)**. *87th EAGE Annual Conference & Exhibition*."
+      - "L. Wang, **Shaowen Wang**, F. Min, T. Alkhalifah (2026). **[Learned Regularizations for Multiresolution Hash Encoding-based Implicit Full Waveform Inversion Using Diffusion Models](https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610131)**. *87th EAGE Annual Conference & Exhibition*."
+      - "**Shaowen Wang**, T. Alkhalifah (2026). **[Waveform Inversion and Imaging using Implicit Neural Representations](https://doi.org/10.3997/2214-4609.202639076)**. *Sixth EAGE Digitalization Conference & Exhibition*."
+      - "**Shaowen Wang**, T. Alkhalifah (2025). **[Accelerating the Convergence of Implicit FWI and LSRTM with a Field Data Application](https://doi.org/10.1190/image2025-4302395.1)**. *International Meeting for Applied Geoscience & Energy (IMAGE)*."
+      - "**Shaowen Wang**, M. Ravasi, T. Alkhalifah (2025). **[Multiresolution Hash Encoding for High Resolution Implicit Full Waveform Inversion](https://doi.org/10.3997/2214-4609.202510109)**. *86th EAGE Annual Conference & Exhibition*."
+      - "**Shaowen Wang**, T. Alkhalifah (2025). **[Implicit Full Waveform Inversion with Energy-Weighted Gradient](https://doi.org/10.3997/2214-4609.202510069)**. *86th EAGE Annual Conference & Exhibition*."
+      - "**Shaowen Wang**, P. Song, J. Tan, D. Xia, B. Zhao, S. Mao (2024). **[Differentiable Traveltime Misfit for Wave-Equation Tomography](https://doi.org/10.3997/2214-4609.202410170)**. *85th EAGE Annual Conference & Exhibition*."
+
+    preprints:
+      - "L. Wang, **Shaowen Wang**, F. Min, T. Alkhalifah (2026). **[Coarse-to-fine Multi-resolution Hash Encoding for Implicit Full Waveform Inversion](https://arxiv.org/abs/2610.01081)**. *arXiv:2610.01081*."
+      - "**Shaowen Wang**, T. Alkhalifah (2026). **[SWEEP (Seismic Wave Equation Exploration Platform): A Unified Solver Framework for Differentiable Wave Physics](https://arxiv.org/abs/2604.14189)**. *arXiv:2604.14189*."
+      - "**Shaowen Wang**, T. Alkhalifah (2026). **[Target Noise: A Pre-training Based Neural Network Initialization for Efficient High Resolution Learning](https://arxiv.org/abs/2602.06585)**. *arXiv:2602.06585*."
+
+    skills:
+      - label: Programming
+        details: Python, PyTorch, CUDA, C/C++
+      - label: Geophysics
+        details: FWI, RTM/LSRTM, wave-equation modeling, OBN and marine seismic data processing
+      - label: Computing
+        details: GPU acceleration, multi-GPU and distributed computing (HPC)
+
+design:
+  theme: classic
+  page:
+    size: a4
+    top_margin: 1.4cm
+    bottom_margin: 1.4cm
+    left_margin: 1.8cm
+    right_margin: 1.8cm
+  typography:
+    alignment: left
+    line_spacing: 0.7em
+    font_size:
+      body: 10pt
+      name: 26pt
+      headline: 10pt
+      connections: 9.5pt
+      section_titles: 1.3em
+  header:
+    space_below_name: 0.45cm
+    space_below_headline: 0.4cm
+    space_below_connections: 0.45cm
+    connections:
+      space_between_connections: 0.35cm
+  section_titles:
+    space_above: 0.6cm
+    space_below: 0.3cm
+  sections:
+    space_between_regular_entries: 1em
+    space_between_text_based_entries: 0.65em
+    show_time_spans_in: []
+  entries:
+    date_and_location_width: 3.4cm
+    allow_page_break: true  # text-entry sections are one block; let it split across pages
+  templates:
+    single_date: YEAR
+    education_entry:
+      date_and_location_column: DATE
+
+locale:
+  language: english
+
+settings:
+  pdf_title: Shaowen Wang - CV

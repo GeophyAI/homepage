@@ -1,6 +1,6 @@
 # geophyai.com
 
-Personal academic website of **Shaowen Wang** — Postdoctoral Researcher in
+Personal academic website of **Shaowen Wang** — Postdoctoral Fellow in
 Computational Geophysics at [KAUST](https://deepwave.kaust.edu.sa/).
 
 🌐 **Live at [geophyai.com](https://geophyai.com)**

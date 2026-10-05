@@ -15,3 +15,9 @@ node_modules/
 output/playwright/
 test-results/
 vendor
+
+# RenderCV intermediates for the downloadable CV
+/_cv/build/
+
+# raw photo drop-zone (HEIC originals carry GPS); published copies live in assets/img/gallery/
+/assets/conffigs/

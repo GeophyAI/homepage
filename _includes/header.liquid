@@ -1,15 +1,33 @@
 <header>
+  {%- assign is_zh = false -%}
+  {%- if page.lang == 'zh-CN' -%}{%- assign is_zh = true -%}{%- endif -%}
+  {%- assign is_home = false -%}
+  {%- if page.permalink == '/' or page.permalink == '/zh/' -%}{%- assign is_home = true -%}{%- endif -%}
+  {%- if is_zh -%}
+    {%- assign home_url = '/zh/' -%}
+    {%- assign alt_url = page.url | remove_first: '/zh' -%}
+    {%- assign alt_label = 'EN' -%}
+    {%- assign alt_lang = 'en' -%}
+  {%- else -%}
+    {%- assign home_url = '/' -%}
+    {%- assign alt_url = page.url | prepend: '/zh' -%}
+    {%- assign alt_label = '中文' -%}
+    {%- assign alt_lang = 'zh-CN' -%}
+  {%- endif -%}
+  {%- assign alt_page_count = site.pages | where: 'url', alt_url | size -%}
   <style>
     .navbar-logo { height: 42px; width: auto; margin-right: 0.6rem; }
   </style>
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter d-flex align-items-center" href="{{ site.baseurl }}/">
+      {% if is_home == false %}
+        <a class="navbar-brand title font-weight-lighter d-flex align-items-center" href="{{ home_url | relative_url }}">
           <img src="{{ '/assets/img/sweep-logo-nav.svg' | relative_url }}" class="navbar-logo" alt="SWEEP" />
           <span>
-          {% if site.title == 'blank' %}
+          {% if is_zh %}
+            <span class="font-weight-bold">王绍文</span>
+          {% elsif site.title == 'blank' %}
             {% if site.first_name %}
               <span class="font-weight-bold">
                 {{- site.first_name -}}
@@ -30,7 +48,7 @@
         <!-- Social Icons -->
         <div class="navbar-brand social">{% social_links %}</div>
       {% else %}
-        <a class="navbar-brand title d-flex align-items-center" href="{{ site.baseurl }}/" aria-label="Home">
+        <a class="navbar-brand title d-flex align-items-center" href="{{ home_url | relative_url }}" aria-label="Home">
           <img src="{{ '/assets/img/sweep-logo-nav.svg' | relative_url }}" class="navbar-logo" alt="SWEEP" />
         </a>
       {% endif %}
@@ -51,6 +69,16 @@
 
       <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav">
         <ul class="navbar-nav navbar-menu-list flex-nowrap">
+          {% if is_zh %}
+          {% for item in site.data.nav_zh %}
+          <li class="nav-item {% if page.url == item.url %}active{% endif %}">
+            <a class="nav-link" href="{{ item.url | relative_url }}">
+              {{- item.title }}
+              {% if page.url == item.url %}<span class="sr-only">(current)</span>{% endif %}
+            </a>
+          </li>
+          {% endfor %}
+          {% else %}
           {% for page in site.pages %}
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
           {% endfor %}
@@ -126,6 +154,13 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+          {% endif %}
+          {% if alt_page_count > 0 %}
+            <!-- Language switch -->
+            <li class="nav-item">
+              <a class="nav-link" href="{{ alt_url | relative_url }}" hreflang="{{ alt_lang }}" lang="{{ alt_lang }}" onclick="try{localStorage.setItem('site-lang','{% if is_zh %}en{% else %}zh{% endif %}')}catch(e){}">{{ alt_label }}</a>
+            </li>
+          {% endif %}
           {% if site.search_enabled %}
             <!-- Search -->
             <li class="nav-item">

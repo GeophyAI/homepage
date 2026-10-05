@@ -1,0 +1,33 @@
+# Clickable regions on assets/img/research/sweepx_ecosystem.png (1600x900), rendered by _includes/sweepx_map.liquid.
+# box = [left, top, width, height] in % of the image. A component without `url` is shown but not clickable:
+# fill in its repository URL once it is public.
+
+- name: SWEEPX
+  url: https://sweepx.deepwave.group/
+  icon: false  # the box is the logo text itself; an icon would cover the X
+  box: [2.06, 3.89, 14.56, 4.44]
+- name: sweep-solver
+  url: https://github.com/DeepWave-KAUST/sweep
+  dark: true  # teal box: draw the link icon in white
+  box: [36.5, 37.89, 27.0, 24.44]
+- name: sweep-agent
+  url: https://github.com/DeepWave-KAUST/sweep-agent
+  box: [38.06, 16.67, 23.81, 13.56]
+- name: sweep-tasks
+  url: 
+  box: [5.06, 27.56, 23.62, 13.78]
+- name: sweep-io
+  url: 
+  box: [5.06, 48.11, 23.62, 13.89]
+- name: sweep-opt
+  url: 
+  box: [71.25, 27.56, 23.62, 13.78]
+- name: sweep-loss
+  url: 
+  box: [71.25, 48.11, 23.62, 13.89]
+- name: sweep-tomo
+  url: 
+  box: [23.81, 69.22, 23.56, 13.89]
+- name: sweep-nn
+  url: 
+  box: [52.5, 69.22, 23.62, 13.89]

@@ -1,0 +1,37 @@
+{%- comment -%} News items carry `lang` (en / zh-CN); show only the current page's language. {%- endcomment -%}
+{%- assign news_lang = page.lang | default: 'en' -%}
+{%- assign lang_news = site.news | where: 'lang', news_lang | sort: 'date' -%}
+<div class="news">
+  {% if lang_news.size > 0 %}
+    {% assign news_size = lang_news | size %}
+    <div
+      class="table-responsive"
+      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
+        style="max-height: 60vw"
+      {% endif %}
+    >
+      <table class="table table-sm table-borderless">
+        {% assign news = lang_news | reverse %}
+        {% if include.limit and page.announcements.limit %}
+          {% assign news_limit = page.announcements.limit %}
+        {% else %}
+          {% assign news_limit = news_size %}
+        {% endif %}
+        {% for item in news limit: news_limit %}
+          <tr>
+            <th scope="row" style="width: 20%">{% if news_lang == 'zh-CN' %}{{ item.date | date: '%Y年%-m月%-d日' }}{% else %}{{ item.date | date: '%b %d, %Y' }}{% endif %}</th>
+            <td>
+              {% if item.inline %}
+                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+              {% else %}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  {% else %}
+    <p>{% if news_lang == 'zh-CN' %}暂无动态。{% else %}No news so far...{% endif %}</p>
+  {% endif %}
+</div>

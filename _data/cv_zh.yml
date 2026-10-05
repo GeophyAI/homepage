@@ -1,0 +1,58 @@
+# Chinese CV content rendered by _pages/zh/cv.html (English CV lives in _data/cv.yml)
+name: 王绍文
+label: 博士后
+email: shaowen.wang@kaust.edu.sa
+location: Thuwal, Saudi Arabia
+summary: 目前在 KAUST 做博士后，主要研究全波形反演和地震成像，以及机器学习在地震数据处理里的应用，平时也写不少 GPU 高性能计算的代码。
+
+experience:
+  - position: 博士后
+    org: 阿卜杜拉国王科技大学（KAUST）
+    dept: 物理科学与工程学部
+    start: 2024
+    end: 至今
+    location: Thuwal, Saudi Arabia
+    highlights:
+      - 用可微分波动方程求解器和隐式神经表示（INR）做全波形反演（FWI）和地震成像
+      - 开发了 [SWEEP](https://sweepx.deepwave.group/)，一个可微分的波动方程模拟框架
+      - 地震数据处理里的深度学习方法，以及 GPU 高性能计算
+
+education:
+  - degree: 博士
+    school: 中国海洋大学
+    major: 海洋地球物理学
+    start: 2020
+    end: 2024
+    location: 青岛
+  - degree: 硕士
+    school: 中国海洋大学
+    major: 地球探测与信息技术
+    start: 2018
+    end: 2020
+    location: 青岛
+  - degree: 学士
+    school: 山东科技大学
+    major: 勘查技术与工程
+    start: 2014
+    end: 2018
+    location: 青岛
+
+interests:
+  - name: 计算地震学
+    keywords: 全波形反演、逆时偏移、地震成像、可微分波动方程求解器
+  - name: 机器学习 + 地球物理
+    keywords: 隐式神经表示、网络重参数化、地震数据处理里的深度学习、扩散模型
+  - name: 高性能计算
+    keywords: GPU 加速、CUDA、多卡并行和分布式反演
+
+skills:
+  - name: 编程
+    keywords: Python、PyTorch、CUDA、C/C++
+  - name: 地球物理
+    keywords: 全波形反演、RTM/LSRTM、波动方程正演、OBN 和海上地震数据处理
+
+languages:
+  - name: 中文
+    level: 母语
+  - name: 英语
+    level: 熟练

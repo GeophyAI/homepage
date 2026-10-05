@@ -1,0 +1,11 @@
+# Navbar menu shown on Chinese (lang: zh-CN) pages; see _includes/header.liquid
+- title: 首页
+  url: /zh/
+- title: 研究
+  url: /zh/research/
+- title: 论文
+  url: /zh/publications/
+- title: 简历
+  url: /zh/cv/
+- title: 照片
+  url: /zh/gallery/
