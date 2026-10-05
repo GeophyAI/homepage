@@ -1,0 +1,200 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <script>
+      (function () {
+        var pref = null;
+        try { pref = localStorage.getItem("site-lang"); } catch (e) {}
+        var langs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || ""];
+        var wantsZh = pref ? pref === "zh" : /^zh\b/i.test(langs[0] || "");
+        if (wantsZh) location.replace("/zh/cv/" + location.search + location.hash);
+      })();
+    </script> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> cv | Shaowen Wang </title> <meta name="author" content="Shaowen Wang"> <meta name="description" content="Curriculum vitae of Shaowen Wang."> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/sweep-icon.png?v=2eeedc828e1819ba4162bd9ef3f5604a"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="stylesheet" href="/assets/css/al-folio-cv.css?v=734ded6bdb6d549b12085aded7cf1c5e"> <link rel="canonical" href="https://geophyai.com/cv/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header><style>
+    .navbar-logo { height: 42px; width: auto; margin-right: 0.6rem; }
+  </style> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter d-flex align-items-center" href="/"> <img src="/assets/img/sweep-logo-nav.svg" class="navbar-logo" alt="SWEEP"> <span> <span class="font-weight-bold">Shaowen</span> Wang </span> </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item "> <a class="nav-link" href="/research/">research </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item active"> <a class="nav-link" href="/cv/">cv <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/gallery/">gallery </a> </li> <li class="nav-item"> <a class="nav-link" href="/zh/cv/" hreflang="zh-CN" lang="zh-CN" onclick="try{localStorage.setItem('site-lang','zh')}catch(e){}">中文</a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title"> cv <a href="/assets/pdf/Shaowen_Wang_CV.pdf" target="_blank" rel="noopener noreferrer" class="float-right"> <i class="fa-solid fa-file-pdf"></i> </a> </h1> <p class="post-description">Curriculum vitae of Shaowen Wang.</p> </header> <article> <div class="cv"> <div class="card mt-3 p-3"> <h3 class="card-title font-weight-medium">Contact Information</h3> <table class="table table-cv table-sm table-borderless"> <tr> <td class="p-1 pr-2 font-weight-bold"><b>Name</b></td> <td class="p-1 pl-2 font-weight-light">Shaowen Wang</td> </tr> <tr> <td class="p-1 pr-2 font-weight-bold"><b>Professional Title</b></td> <td class="p-1 pl-2 font-weight-light">Postdoctoral Fellow</td> </tr> <tr> <td class="p-1 pr-2 font-weight-bold"><b>Email</b></td> <td class="p-1 pl-2 font-weight-light">shaowen.wang@kaust.edu.sa</td> </tr> </table> </div> <div class="card mt-3 p-3"> <h3 class="card-title font-weight-medium">Professional Summary</h3> <p>Postdoctoral Fellow at KAUST working on computational seismology and machine learning for the wave equation — differentiable wave-physics solvers, implicit neural representations for full-waveform inversion and seismic imaging, deep learning for seismic data processing, and high-performance computing. </p> </div> <a class="anchor" id="experience"></a> <div class="card mt-3 p-3"> <h3 class="card-title font-weight-medium">Experience</h3> <div> <ul class="card-text font-weight-light list-group list-group-flush"> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 2024 - Present </span> </td> </tr> <tr> <td> <p class="location"> <i class="fa-solid fa-location-dot iconlocation"></i> Thuwal, Saudi Arabia </p> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title font-weight-bold ml-1 ml-md-4"> Postdoctoral Fellow </h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem"> King Abdullah University of Science and Technology (KAUST) </h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic"> Physical Science and Engineering Division. </h6> <ul class="items"> <li> <span class="item">Differentiable wave-physics solvers and implicit neural representations (INRs) for full-waveform inversion (FWI) and seismic imaging. </span> </li> <li> <span class="item">Author of <a href="https://sweepx.deepwave.group/" rel="external nofollow noopener" target="_blank">SWEEP</a>, a unified framework for differentiable wave simulation. </span> </li> <li> <span class="item">Deep-learning methods for seismic data processing and GPU/high-performance computing. </span> </li> </ul> </div> </div> </li> </ul> </div> </div> <a class="anchor" id="education"></a> <div class="card mt-3 p-3"> <h3 class="card-title font-weight-medium">Education</h3> <div> <ul class="card-text font-weight-light list-group list-group-flush"> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 2020 - 2024 </span> </td> </tr> <tr> <td> <p class="location"> <i class="fa-solid fa-location-dot iconlocation"></i> Qingdao, China </p> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title font-weight-bold ml-1 ml-md-4"> Ph.D. </h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Ocean University of China</h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">Marine Geophysics</h6> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 2018 - 2020 </span> </td> </tr> <tr> <td> <p class="location"> <i class="fa-solid fa-location-dot iconlocation"></i> Qingdao, China </p> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title font-weight-bold ml-1 ml-md-4"> M.Sc. </h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Ocean University of China</h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">Geo-detection and Information Technology</h6> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center date-column"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 2014 - 2018 </span> </td> </tr> <tr> <td> <p class="location"> <i class="fa-solid fa-location-dot iconlocation"></i> Qingdao, China </p> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title font-weight-bold ml-1 ml-md-4"> B.Sc. </h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem">Shandong University of Science and Technology</h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic">Prospecting Technology and Engineering</h6> </div> </div> </li> </ul> </div> </div> <a class="anchor" id="publications"></a> <div class="card mt-3 p-3"> <h3 class="card-title font-weight-medium">Publications</h3> <div> <ul class="card-text font-weight-light list-group list-group-flush"> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 2026 </span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title font-weight-bold ml-1 ml-md-4"> <a href="https://doi.org/10.1093/gji/ggag277" rel="external nofollow noopener" target="_blank">Implicit Full Waveform Inversion Imaging</a> </h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem"> <em>Geophysical Journal International</em> </h6> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 2026 </span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title font-weight-bold ml-1 ml-md-4"> <a href="https://arxiv.org/abs/2604.14189" rel="external nofollow noopener" target="_blank">SWEEP (Seismic Wave Equation Exploration Platform): A Unified Solver Framework for Differentiable Wave Physics</a> </h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem"> <em>arXiv preprint</em> </h6> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 2025 </span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title font-weight-bold ml-1 ml-md-4"> <a href="https://doi.org/10.3997/2214-4609.202510109" rel="external nofollow noopener" target="_blank">Multiresolution Hash Encoding for High Resolution Implicit Full Waveform Inversion</a> </h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem"> <em>86th EAGE Annual Conference &amp; Exhibition</em> </h6> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 2023 </span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title font-weight-bold ml-1 ml-md-4"> <a href="https://doi.org/10.1190/geo2022-0252.1" rel="external nofollow noopener" target="_blank">Deep Learning-based Attenuation for Shear-wave Leakage from Ocean-bottom Node Data</a> </h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem"> <em>Geophysics</em> </h6> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 2023 </span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title font-weight-bold ml-1 ml-md-4"> <a href="https://doi.org/10.1109/TGRS.2023.3317529" rel="external nofollow noopener" target="_blank">Memory Optimization in RNN-based Full Waveform Inversion using Boundary Saving Wavefield Reconstruction</a> </h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem"> <em>IEEE Transactions on Geoscience and Remote Sensing</em> </h6> </div> </div> </li> <li class="list-group-item"> <div class="row"> <div class="col-xs-2 col-sm-2 col-md-2 text-center"> <table class="table-cv"> <tbody> <tr> <td> <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> 2022 </span> </td> </tr> </tbody> </table> </div> <div class="col-xs-10 col-sm-10 col-md-10 mt-2 mt-md-0"> <h6 class="title font-weight-bold ml-1 ml-md-4"> <a href="https://doi.org/10.1109/TGRS.2022.3197929" rel="external nofollow noopener" target="_blank">Attention-based Neural Network for Erratic Noise Attenuation from Seismic Data</a> </h6> <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem"> <em>IEEE Transactions on Geoscience and Remote Sensing</em> </h6> </div> </div> </li> </ul> </div> </div> <a class="anchor" id="academic-interests"></a> <div class="card mt-3 p-3"> <h3 class="card-title font-weight-medium">Academic Interests</h3> <div> <div class="card-text font-weight-light"> <div class="interest-item"> <strong>Computational Seismology:</strong> Full-waveform inversion, reverse-time migration, differentiable wave-physics solvers, seismic imaging </div> <div class="interest-item"> <strong>Machine Learning for Geophysics:</strong> Implicit neural representations, neural reparameterization, deep learning for seismic data processing, diffusion models </div> <div class="interest-item"> <strong>High-Performance Computing:</strong> GPU acceleration, CUDA, multi-GPU and distributed inversion </div> </div> <style>
+  .interest-item {
+    padding: 0.5rem 0;
+  }
+</style> </div> </div> <a class="anchor" id="skills"></a> <div class="card mt-3 p-3"> <h3 class="card-title font-weight-medium">Skills</h3> <div> <div class="card-text font-weight-light"> <div class="skill-item"> <strong>Programming:</strong> Python, PyTorch, CUDA, C/C++ </div> <div class="skill-item"> <strong>Geophysics:</strong> FWI, RTM, LSRTM, wave-equation modeling, OBN and marine data processing </div> </div> <style>
+  .skill-item {
+    padding: 0.5rem 0;
+  }
+</style> </div> </div> <a class="anchor" id="languages"></a> <div class="card mt-3 p-3"> <h3 class="card-title font-weight-medium">Languages</h3> <div> <div class="card-text font-weight-light"> <div class="language-item"> <strong> Chinese :</strong> Native speaker </div> <div class="language-item"> <strong> English :</strong> Fluent </div> </div> <style>
+  .language-item {
+    padding: 0.5rem 0;
+  }
+</style> </div> </div> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Shaowen Wang. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-research",
+          title: "research",
+          description: "Two directions I am working on right now.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "My publications, grouped by year, type, or venue. Click a title to open the paper.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "Curriculum vitae of Shaowen Wang.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-gallery",
+          title: "gallery",
+          description: "Photos from conferences and talks, newest first. Click a photo to enlarge.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/gallery/";
+          },
+        },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather/";
+            },},{id: "news-在第-86-届-eage-年会-法国图卢兹-发表了-2-篇隐式-fwi-的会议摘要",
+          title: '在第 86 届 EAGE 年会（法国图卢兹）发表了 2 篇隐式 FWI 的会议摘要。',
+          description: "",
+          section: "News",},{id: "news-two-abstracts-on-implicit-fwi-at-the-86th-eage-annual-conference-amp-amp-exhibition-in-toulouse-france",
+          title: 'Two abstracts on implicit FWI at the 86th EAGE Annual Conference &amp;amp;amp; Exhibition...',
+          description: "",
+          section: "News",},{id: "news-在-image-2025-美国休斯顿-发表会议摘要-accelerating-the-convergence-of-implicit-fwi-and-lsrtm-with-a-field-data-application",
+          title: '在 IMAGE 2025（美国休斯顿）发表会议摘要 Accelerating the convergence of implicit FWI and LSRTM with a...',
+          description: "",
+          section: "News",},{id: "news-abstract-accelerating-the-convergence-of-implicit-fwi-and-lsrtm-with-a-field-data-application-at-image-2025-in-houston",
+          title: 'Abstract Accelerating the convergence of implicit FWI and LSRTM with a field data...',
+          description: "",
+          section: "News",},{id: "news-预印本-target-noise-上线-arxiv-讲的是一种基于预训练的网络初始化方法-用来加快高分辨率学习",
+          title: '预印本 Target Noise 上线 arXiv，讲的是一种基于预训练的网络初始化方法，用来加快高分辨率学习。',
+          description: "",
+          section: "News",},{id: "news-preprint-target-noise-a-pre-training-based-neural-network-initialization-for-efficient-high-resolution-learning-is-on-arxiv",
+          title: 'Preprint Target Noise: a pre-training based neural network initialization for efficient high resolution...',
+          description: "",
+          section: "News",},{id: "news-在第六届-eage-数字化会议-挪威斯塔万格-发表会议摘要-waveform-inversion-and-imaging-using-implicit-neural-representations",
+          title: '在第六届 EAGE 数字化会议（挪威斯塔万格）发表会议摘要 Waveform inversion and imaging using implicit neural representations。',
+          description: "",
+          section: "News",},{id: "news-abstract-waveform-inversion-and-imaging-using-implicit-neural-representations-at-the-sixth-eage-digitalization-conference-in-stavanger-norway",
+          title: 'Abstract Waveform inversion and imaging using implicit neural representations at the Sixth EAGE...',
+          description: "",
+          section: "News",},{id: "news-sweep-的预印本上线-arxiv-了-文档在-sweepx-deepwave-group",
+          title: 'SWEEP 的预印本上线 arXiv 了，文档在 sweepx.deepwave.group。',
+          description: "",
+          section: "News",},{id: "news-the-sweep-preprint-is-on-arxiv-documentation-at-sweepx-deepwave-group",
+          title: 'The SWEEP preprint is on arXiv; documentation at sweepx.deepwave.group.',
+          description: "",
+          section: "News",},{id: "news-在第-87-届-eage-年会-英国阿伯丁-发表了-4-篇会议摘要-详见论文",
+          title: '在第 87 届 EAGE 年会（英国阿伯丁）发表了 4 篇会议摘要，详见论文。',
+          description: "",
+          section: "News",},{id: "news-four-abstracts-at-the-87th-eage-annual-conference-amp-amp-exhibition-in-aberdeen-uk-see-publications",
+          title: 'Four abstracts at the 87th EAGE Annual Conference &amp;amp;amp; Exhibition in Aberdeen, UK...',
+          description: "",
+          section: "News",},{id: "news-论文-implicit-full-waveform-inversion-imaging-在-geophysical-journal-international-正式发表",
+          title: '论文 Implicit full waveform inversion imaging 在 Geophysical Journal International 正式发表。',
+          description: "",
+          section: "News",},{id: "news-our-paper-implicit-full-waveform-inversion-imaging-is-published-in-geophysical-journal-international",
+          title: 'Our paper Implicit full waveform inversion imaging is published in Geophysical Journal International....',
+          description: "",
+          section: "News",},{id: "news-在-image-2026-美国休斯顿-做了-3-个口头报告-都基于哈希编码的神经表示-地震数据插值-das-数据压缩-以及结合扩散模型正则化的隐式-fwi",
+          title: '在 IMAGE 2026（美国休斯顿）做了 3 个口头报告，都基于哈希编码的神经表示：地震数据插值、DAS 数据压缩，以及结合扩散模型正则化的隐式 FWI。',
+          description: "",
+          section: "News",},{id: "news-gave-three-oral-talks-at-image-2026-in-houston-all-built-on-hash-encoded-neural-representations-seismic-data-interpolation-das-data-compression-and-implicit-fwi-with-diffusion-model-regularization",
+          title: 'Gave three oral talks at IMAGE 2026 in Houston, all built on hash-encoded...',
+          description: "",
+          section: "News",},{id: "news-预印本-coarse-to-fine-multi-resolution-hash-encoding-for-implicit-full-waveform-inversion-上线-arxiv-思路是把哈希编码的分辨率层级由粗到细逐步打开-先把长波长背景反演出来-再补高波数细节",
+          title: '预印本 Coarse-to-fine multi-resolution hash encoding for implicit full waveform inversion 上线 arXiv。思路是把哈希编码的分辨率层级由粗到细逐步打开，先把长波长背景反演出来，再补高波数细节。',
+          description: "",
+          section: "News",},{id: "news-preprint-coarse-to-fine-multi-resolution-hash-encoding-for-implicit-full-waveform-inversion-is-on-arxiv-hash-encoding-levels-are-switched-on-from-coarse-to-fine-so-the-long-wavelength-background-is-resolved-before-high-wavenumber-detail",
+          title: 'Preprint Coarse-to-fine multi-resolution hash encoding for implicit full waveform inversion is on arXiv:...',
+          description: "",
+          section: "News",},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/introduction-to-machine-learning/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%73%68%61%6F%77%65%6E.%77%61%6E%67@%6B%61%75%73%74.%65%64%75.%73%61", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/GeophyAI", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=avZKwOsAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/shaowinw", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>

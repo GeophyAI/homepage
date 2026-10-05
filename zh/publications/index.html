@@ -1,0 +1,553 @@
+<!DOCTYPE html> <html lang="zh-CN"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> 论文 | Shaowen Wang </title> <meta name="author" content="Shaowen Wang"> <meta name="description" content="可以按年份、类型或期刊分组，点标题就能打开论文。"> <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="/assets/img/sweep-icon.png?v=2eeedc828e1819ba4162bd9ef3f5604a"> <link rel="stylesheet" href="/assets/css/main.css?v=f0b101217084a90093badfe99ff9a7d1"> <link rel="canonical" href="https://geophyai.com/zh/publications/"> <script src="/assets/js/theme.js?v=7af685e2ba20b37fef545c97b8064050"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
+    initTheme();
+  </script> </head> <body class="fixed-top-nav "> <header><style>
+    .navbar-logo { height: 42px; width: auto; margin-right: 0.6rem; }
+  </style> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter d-flex align-items-center" href="/zh/"> <img src="/assets/img/sweep-logo-nav.svg" class="navbar-logo" alt="SWEEP"> <span> <span class="font-weight-bold">王绍文</span> </span> </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/zh/">首页 </a> </li> <li class="nav-item "> <a class="nav-link" href="/zh/research/">研究 </a> </li> <li class="nav-item active"> <a class="nav-link" href="/zh/publications/">论文 <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/zh/cv/">简历 </a> </li> <li class="nav-item "> <a class="nav-link" href="/zh/gallery/">照片 </a> </li> <li class="nav-item"> <a class="nav-link" href="/publications/" hreflang="en" lang="en" onclick="try{localStorage.setItem('site-lang','en')}catch(e){}">EN</a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">论文</h1> <p class="post-description">可以按年份、类型或期刊分组，点标题就能打开论文。</p> </header> <article> <script src="/assets/js/bibsearch.js?v=1bc438ca9037884cc579601c09afd847" type="module"></script> <p><input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter"></p> <div class="pub-sort btn-group btn-group-sm" role="group" aria-label="论文排序"> <button type="button" class="btn btn-outline-primary active" data-sort="year">按年份</button> <button type="button" class="btn btn-outline-primary" data-sort="cat">按类型</button> <button type="button" class="btn btn-outline-primary" data-sort="venue">按期刊</button> </div> <div class="publications"> <h2 class="bibliography">2026</h2> <ol class="bibliography"> <li> <div class="row" data-year="2026" data-cat="Preprints" data-venue="arXiv preprint" data-abbr="arXiv"> <div id="wang2026c2fhash" class="col-sm-10"> <div class="title"><a href="https://arxiv.org/abs/2610.01081" target="_blank" rel="noopener noreferrer">Coarse-to-fine Multi-resolution Hash Encoding for Implicit Full Waveform Inversion</a></div> <div class="author"> L. Wang, <em>Shaowen Wang</em>, F. Min, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '1 more author' ? 'Tariq Alkhalifah' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>arXiv preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2610.01081" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2026c2fhash</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Coarse-to-fine Multi-resolution Hash Encoding for Implicit Full Waveform Inversion}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, L. and Wang, Shaowen and Min, F. and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2026" data-cat="Journal Articles" data-venue="Geophysical Journal International" data-abbr="GJI"> <div id="wang2026ifwiimaging" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.1093/gji/ggag277" target="_blank" rel="noopener noreferrer">Implicit Full Waveform Inversion Imaging</a></div> <div class="author"> <em>Shaowen Wang</em> and Tariq Alkhalifah </div> <div class="periodical"> <em>Geophysical Journal International</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.1093/gji/ggag277" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2026ifwiimaging</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Implicit Full Waveform Inversion Imaging}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Geophysical Journal International}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1093/gji/ggag277}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2026" data-cat="Preprints" data-venue="arXiv preprint" data-abbr="arXiv"> <div id="wang2026sweep" class="col-sm-10"> <div class="title"><a href="https://arxiv.org/abs/2604.14189" target="_blank" rel="noopener noreferrer">SWEEP (Seismic Wave Equation Exploration Platform): A Unified Solver Framework for Differentiable Wave Physics</a></div> <div class="author"> <em>Shaowen Wang</em> and Tariq Alkhalifah </div> <div class="periodical"> <em>arXiv preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2604.14189" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2026sweep</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{SWEEP (Seismic Wave Equation Exploration Platform): A Unified Solver Framework for Differentiable Wave Physics}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2026" data-cat="Preprints" data-venue="arXiv preprint" data-abbr="arXiv"> <div id="wang2026targetnoise" class="col-sm-10"> <div class="title"><a href="https://arxiv.org/abs/2602.06585" target="_blank" rel="noopener noreferrer">Target Noise: A Pre-training Based Neural Network Initialization for Efficient High Resolution Learning</a></div> <div class="author"> <em>Shaowen Wang</em> and Tariq Alkhalifah </div> <div class="periodical"> <em>arXiv preprint</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="http://arxiv.org/abs/2602.06585" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">arXiv</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2026targetnoise</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Target Noise: A Pre-training Based Neural Network Initialization for Efficient High Resolution Learning}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv preprint}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2026" data-cat="Conference Proceedings" data-venue="International Meeting for Applied Geoscience &amp; Energy (IMAGE)" data-abbr="SEG"> <div id="wang2026image_interp" class="col-sm-10"> <div class="title">Seismic Data Interpolation using Neural Representations with Hybrid Fourier–Hash Encoding</div> <div class="author"> L. Wang, O. M. Saad, <em>Shaowen Wang</em>, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '2 more authors' ? 'F. Min, Tariq Alkhalifah' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>In International Meeting for Applied Geoscience &amp; Energy (IMAGE)</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2026image_interp</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Seismic Data Interpolation using Neural Representations with Hybrid Fourier–Hash Encoding}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, L. and Saad, O. M. and Wang, Shaowen and Min, F. and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Meeting for Applied Geoscience &amp; Energy (IMAGE)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2026" data-cat="Conference Proceedings" data-venue="International Meeting for Applied Geoscience &amp; Energy (IMAGE)" data-abbr="SEG"> <div id="wang2026image_das" class="col-sm-10"> <div class="title">Self-supervised DAS Data Lossy Compression Based on Anisotropic Multi-resolution Hash Encoding</div> <div class="author"> <em>Shaowen Wang</em> and Tariq Alkhalifah </div> <div class="periodical"> <em>In International Meeting for Applied Geoscience &amp; Energy (IMAGE)</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2026image_das</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Self-supervised DAS Data Lossy Compression Based on Anisotropic Multi-resolution Hash Encoding}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Meeting for Applied Geoscience &amp; Energy (IMAGE)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2026" data-cat="Conference Proceedings" data-venue="International Meeting for Applied Geoscience &amp; Energy (IMAGE)" data-abbr="SEG"> <div id="wang2026image_diffreg" class="col-sm-10"> <div class="title">Learned Regularizations for Hash-encoding Implicit FWI using Well-constrained Diffusion Models</div> <div class="author"> L. Wang, <em>Shaowen Wang</em>, F. Min, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '1 more author' ? 'Tariq Alkhalifah' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>In International Meeting for Applied Geoscience &amp; Energy (IMAGE)</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2026image_diffreg</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Learned Regularizations for Hash-encoding Implicit FWI using Well-constrained Diffusion Models}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, L. and Wang, Shaowen and Min, F. and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Meeting for Applied Geoscience &amp; Energy (IMAGE)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2026" data-cat="Conference Proceedings" data-venue="Sixth EAGE Digitalization Conference &amp; Exhibition" data-abbr="EAGE"> <div id="wang2026inrimaging" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.3997/2214-4609.202639076" target="_blank" rel="noopener noreferrer">Waveform Inversion and Imaging using Implicit Neural Representations</a></div> <div class="author"> <em>Shaowen Wang</em> and Tariq Alkhalifah </div> <div class="periodical"> <em>In Sixth EAGE Digitalization Conference &amp; Exhibition</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.3997/2214-4609.202639076" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2026inrimaging</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Waveform Inversion and Imaging using Implicit Neural Representations}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Sixth EAGE Digitalization Conference &amp; Exhibition}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.3997/2214-4609.202639076}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2026" data-cat="Conference Proceedings" data-venue="87th EAGE Annual Conference &amp; Exhibition" data-abbr="EAGE"> <div id="wang2026pretrain" class="col-sm-10"> <div class="title"><a href="https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610129" target="_blank" rel="noopener noreferrer">Pretraining for Faster Implicit Full Waveform Inversion under Multiresolution Hash Encoding</a></div> <div class="author"> <em>Shaowen Wang</em> and Tariq Alkhalifah </div> <div class="periodical"> <em>In 87th EAGE Annual Conference &amp; Exhibition</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2026pretrain</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Pretraining for Faster Implicit Full Waveform Inversion under Multiresolution Hash Encoding}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{87th EAGE Annual Conference &amp; Exhibition}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610129}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2026" data-cat="Conference Proceedings" data-venue="87th EAGE Annual Conference &amp; Exhibition" data-abbr="EAGE"> <div id="wang2026spectral" class="col-sm-10"> <div class="title"><a href="https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610132" target="_blank" rel="noopener noreferrer">Spectral Warm-up for Neural-Reparameterized Full Waveform Inversion</a></div> <div class="author"> <em>Shaowen Wang</em> and Tariq Alkhalifah </div> <div class="periodical"> <em>In 87th EAGE Annual Conference &amp; Exhibition</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2026spectral</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Spectral Warm-up for Neural-Reparameterized Full Waveform Inversion}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{87th EAGE Annual Conference &amp; Exhibition}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610132}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2026" data-cat="Conference Proceedings" data-venue="87th EAGE Annual Conference &amp; Exhibition" data-abbr="EAGE"> <div id="wang2026fourierhash" class="col-sm-10"> <div class="title"><a href="https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610369" target="_blank" rel="noopener noreferrer">A Hybrid Fourier-Hash Encoded Implicit Neural Representations for Seismic Data</a></div> <div class="author"> L. Wang, O. M. Saad, <em>Shaowen Wang</em>, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '2 more authors' ? 'F. Min, Tariq Alkhalifah' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>In 87th EAGE Annual Conference &amp; Exhibition</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2026fourierhash</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{A Hybrid Fourier-Hash Encoded Implicit Neural Representations for Seismic Data}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, L. and Saad, O. M. and Wang, Shaowen and Min, F. and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{87th EAGE Annual Conference &amp; Exhibition}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610369}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2026" data-cat="Conference Proceedings" data-venue="87th EAGE Annual Conference &amp; Exhibition" data-abbr="EAGE"> <div id="wang2026diffusionreg" class="col-sm-10"> <div class="title"><a href="https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610131" target="_blank" rel="noopener noreferrer">Learned Regularizations for Multiresolution Hash Encoding-based Implicit Full Waveform Inversion Using Diffusion Models</a></div> <div class="author"> L. Wang, <em>Shaowen Wang</em>, F. Min, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '1 more author' ? 'Tariq Alkhalifah' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>In 87th EAGE Annual Conference &amp; Exhibition</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2026diffusionreg</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Learned Regularizations for Multiresolution Hash Encoding-based Implicit Full Waveform Inversion Using Diffusion Models}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, L. and Wang, Shaowen and Min, F. and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{87th EAGE Annual Conference &amp; Exhibition}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
+  <span class="na">url</span> <span class="p">=</span> <span class="s">{https://www.earthdoc.org/content/papers/10.3997/2214-4609.202610131}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> <h2 class="bibliography">2025</h2> <ol class="bibliography"> <li> <div class="row" data-year="2025" data-cat="Conference Proceedings" data-venue="86th EAGE Annual Conference &amp; Exhibition" data-abbr="EAGE"> <div id="wang2025mrhash" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.3997/2214-4609.202510109" target="_blank" rel="noopener noreferrer">Multiresolution Hash Encoding for High Resolution Implicit Full Waveform Inversion</a></div> <div class="author"> <em>Shaowen Wang</em>, Matteo Ravasi, and Tariq Alkhalifah </div> <div class="periodical"> <em>In 86th EAGE Annual Conference &amp; Exhibition</em>, 2025 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.3997/2214-4609.202510109" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2025mrhash</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Multiresolution Hash Encoding for High Resolution Implicit Full Waveform Inversion}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Ravasi, Matteo and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{86th EAGE Annual Conference &amp; Exhibition}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.3997/2214-4609.202510109}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2025" data-cat="Conference Proceedings" data-venue="86th EAGE Annual Conference &amp; Exhibition" data-abbr="EAGE"> <div id="wang2025energygrad" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.3997/2214-4609.202510069" target="_blank" rel="noopener noreferrer">Implicit Full Waveform Inversion with Energy-Weighted Gradient</a></div> <div class="author"> <em>Shaowen Wang</em> and Tariq Alkhalifah </div> <div class="periodical"> <em>In 86th EAGE Annual Conference &amp; Exhibition</em>, 2025 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.3997/2214-4609.202510069" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2025energygrad</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Implicit Full Waveform Inversion with Energy-Weighted Gradient}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{86th EAGE Annual Conference &amp; Exhibition}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.3997/2214-4609.202510069}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2025" data-cat="Conference Proceedings" data-venue="International Meeting for Applied Geoscience &amp; Energy (IMAGE)" data-abbr="SEG"> <div id="wang2025accel" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.1190/image2025-4302395.1" target="_blank" rel="noopener noreferrer">Accelerating the Convergence of Implicit FWI and LSRTM with a Field Data Application</a></div> <div class="author"> <em>Shaowen Wang</em> and Tariq Alkhalifah </div> <div class="periodical"> <em>In International Meeting for Applied Geoscience &amp; Energy (IMAGE)</em>, 2025 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.1190/image2025-4302395.1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2025accel</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Accelerating the Convergence of Implicit FWI and LSRTM with a Field Data Application}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Alkhalifah, Tariq}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{International Meeting for Applied Geoscience &amp; Energy (IMAGE)}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1190/image2025-4302395.1}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> <h2 class="bibliography">2024</h2> <ol class="bibliography"> <li> <div class="row" data-year="2024" data-cat="Journal Articles" data-venue="Geophysical Prospecting" data-abbr="GP"> <div id="wang2024obn4c" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.1111/1365-2478.13336" target="_blank" rel="noopener noreferrer">Deep Learning for Noise Attenuation from the Ocean Bottom Node 4C Data</a></div> <div class="author"> <em>Shaowen Wang</em>, J. Tan, P. Song, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '3 more authors' ? 'B. He, Q. Wang, G. Du' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>Geophysical Prospecting</em>, 2024 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.1111/1365-2478.13336" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2024obn4c</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Deep Learning for Noise Attenuation from the Ocean Bottom Node 4C Data}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Tan, J. and Song, P. and He, B. and Wang, Q. and Du, G.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Geophysical Prospecting}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1111/1365-2478.13336}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2024" data-cat="Journal Articles" data-venue="Geophysical Prospecting" data-abbr="GP"> <div id="tan2024srmp" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.1111/1365-2478.13359" target="_blank" rel="noopener noreferrer">Surface-related Multiple Prediction for Ocean-bottom Node Data Based on Demigration using Downgoing Wave Imaging Data</a></div> <div class="author"> J. Tan, J. Wang, P. Song, and <span class="more-authors" title="click to view 4 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '4 more authors' ? 'Shaowen Wang, D. Xia, G. Du, Q. Wang' : '4 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">4 more authors</span> </div> <div class="periodical"> <em>Geophysical Prospecting</em>, 2024 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.1111/1365-2478.13359" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">tan2024srmp</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Surface-related Multiple Prediction for Ocean-bottom Node Data Based on Demigration using Downgoing Wave Imaging Data}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Tan, J. and Wang, J. and Song, P. and Wang, Shaowen and Xia, D. and Du, G. and Wang, Q.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Geophysical Prospecting}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1111/1365-2478.13359}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2024" data-cat="Conference Proceedings" data-venue="85th EAGE Annual Conference &amp; Exhibition" data-abbr="EAGE"> <div id="wang2024traveltime" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.3997/2214-4609.202410170" target="_blank" rel="noopener noreferrer">Differentiable Traveltime Misfit for Wave-Equation Tomography</a></div> <div class="author"> <em>Shaowen Wang</em>, P. Song, J. Tan, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '3 more authors' ? 'D. Xia, B. Zhao, S. Mao' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>In 85th EAGE Annual Conference &amp; Exhibition</em>, 2024 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.3997/2214-4609.202410170" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">wang2024traveltime</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Differentiable Traveltime Misfit for Wave-Equation Tomography}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Song, P. and Tan, J. and Xia, D. and Zhao, B. and Mao, S.}</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{85th EAGE Annual Conference &amp; Exhibition}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.3997/2214-4609.202410170}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> <h2 class="bibliography">2023</h2> <ol class="bibliography"> <li> <div class="row" data-year="2023" data-cat="Journal Articles" data-venue="IEEE Transactions on Geoscience and Remote Sensing" data-abbr="IEEE TGRS"> <div id="wang2023memory" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.1109/TGRS.2023.3317529" target="_blank" rel="noopener noreferrer">Memory Optimization in RNN-based Full Waveform Inversion using Boundary Saving Wavefield Reconstruction</a></div> <div class="author"> <em>Shaowen Wang</em>, Y. Jiang, P. Song, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '3 more authors' ? 'J. Tan, Z. Liu, B. He' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.1109/TGRS.2023.3317529" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2023memory</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Memory Optimization in RNN-based Full Waveform Inversion using Boundary Saving Wavefield Reconstruction}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Jiang, Y. and Song, P. and Tan, J. and Liu, Z. and He, B.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Transactions on Geoscience and Remote Sensing}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/TGRS.2023.3317529}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2023" data-cat="Journal Articles" data-venue="Geophysics" data-abbr="Geophysics"> <div id="wang2023shearwave" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.1190/geo2022-0252.1" target="_blank" rel="noopener noreferrer">Deep Learning-based Attenuation for Shear-wave Leakage from Ocean-bottom Node Data</a></div> <div class="author"> <em>Shaowen Wang</em>, P. Song, J. Tan, and <span class="more-authors" title="click to view 4 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '4 more authors' ? 'B. He, D. Xia, Q. Wang, G. Du' : '4 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">4 more authors</span> </div> <div class="periodical"> <em>Geophysics</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.1190/geo2022-0252.1" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2023shearwave</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Deep Learning-based Attenuation for Shear-wave Leakage from Ocean-bottom Node Data}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Song, P. and Tan, J. and He, B. and Xia, D. and Wang, Q. and Du, G.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Geophysics}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1190/geo2022-0252.1}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2023" data-cat="Journal Articles" data-venue="Geophysical Prospecting" data-abbr="GP"> <div id="wang2023deblending" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.1111/1365-2478.13277" target="_blank" rel="noopener noreferrer">Deblending of Seismic Data in the Wavelet Domain via a Convolutional Neural Network Based on Data Augmentation</a></div> <div class="author"> <em>Shaowen Wang</em>, P. Song, J. Tan, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '3 more authors' ? 'D. Xia, G. Du, Q. Wang' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>Geophysical Prospecting</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.1111/1365-2478.13277" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2023deblending</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Deblending of Seismic Data in the Wavelet Domain via a Convolutional Neural Network Based on Data Augmentation}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Song, P. and Tan, J. and Xia, D. and Du, G. and Wang, Q.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Geophysical Prospecting}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1111/1365-2478.13277}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2023" data-cat="Journal Articles" data-venue="Chinese Journal of Geophysics" data-abbr="CJG"> <div id="wang2023adamfwi" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.6038/cjg2022Q0879" target="_blank" rel="noopener noreferrer">Full Waveform Inversion Based on Adam Algorithm with Optimized Parameters</a></div> <div class="author"> Q. Q. Wang, P. Song, Q. F. Hua, and <span class="more-authors" title="click to view 4 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '4 more authors' ? 'B. H. Liu, G. B. Li, Shaowen Wang, G. N. Du' : '4 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">4 more authors</span> </div> <div class="periodical"> <em>Chinese Journal of Geophysics</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.6038/cjg2022Q0879" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2023adamfwi</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Full Waveform Inversion Based on Adam Algorithm with Optimized Parameters}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Q. Q. and Song, P. and Hua, Q. F. and Liu, B. H. and Li, G. B. and Wang, Shaowen and Du, G. N.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Chinese Journal of Geophysics}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.6038/cjg2022Q0879}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> <h2 class="bibliography">2022</h2> <ol class="bibliography"> <li> <div class="row" data-year="2022" data-cat="Journal Articles" data-venue="IEEE Transactions on Geoscience and Remote Sensing" data-abbr="IEEE TGRS"> <div id="wang2022attention" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.1109/TGRS.2022.3197929" target="_blank" rel="noopener noreferrer">Attention-based Neural Network for Erratic Noise Attenuation from Seismic Data with a Shuffled Noise Training Data Generation Strategy</a></div> <div class="author"> <em>Shaowen Wang</em>, P. Song, J. Tan, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '3 more authors' ? 'B. He, Q. Wang, G. Du' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>IEEE Transactions on Geoscience and Remote Sensing</em>, 2022 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.1109/TGRS.2022.3197929" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2022attention</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Attention-based Neural Network for Erratic Noise Attenuation from Seismic Data with a Shuffled Noise Training Data Generation Strategy}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Song, P. and Tan, J. and He, B. and Wang, Q. and Du, G.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{IEEE Transactions on Geoscience and Remote Sensing}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1109/TGRS.2022.3197929}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2022" data-cat="Journal Articles" data-venue="Chinese Journal of Geophysics" data-abbr="CJG"> <div id="wang2022lsrtmqhadam" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.6038/cjg2022P0364" target="_blank" rel="noopener noreferrer">The Least-squares Reverse Time Migration with Gradient Optimization Based on QHAdam</a></div> <div class="author"> <em>Shaowen Wang</em>, P. Song, J. Tan, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '3 more authors' ? 'C. Xie, B. Zhao, S. B. Mao' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>Chinese Journal of Geophysics</em>, 2022 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.6038/cjg2022P0364" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2022lsrtmqhadam</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{The Least-squares Reverse Time Migration with Gradient Optimization Based on QHAdam}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Song, P. and Tan, J. and Xie, C. and Zhao, B. and Mao, S. B.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Chinese Journal of Geophysics}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.6038/cjg2022P0364}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2022" data-cat="Journal Articles" data-venue="Chinese Journal of Geophysics" data-abbr="CJG"> <div id="xie2022ccrtm" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.6038/cjg2022P0328" target="_blank" rel="noopener noreferrer">Cross-correlation Weighted Reverse Time Migration with Wavefield Decomposition Based on Optical Flow Vector</a></div> <div class="author"> C. Xie, P. Song, Z. H. Zou, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '3 more authors' ? 'J. Tan, Shaowen Wang, B. Zhao' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>Chinese Journal of Geophysics</em>, 2022 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.6038/cjg2022P0328" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xie2022ccrtm</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Cross-correlation Weighted Reverse Time Migration with Wavefield Decomposition Based on Optical Flow Vector}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xie, C. and Song, P. and Zou, Z. H. and Tan, J. and Wang, Shaowen and Zhao, B.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Chinese Journal of Geophysics}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.6038/cjg2022P0328}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2022" data-cat="Journal Articles" data-venue="Journal of Ocean University of China" data-abbr="JOUC"> <div id="xia2022tdfwi" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.1007/s11802-022-4956-8" target="_blank" rel="noopener noreferrer">Time Domain Full Waveform Inversion Based on Gradient Preconditioning with an Angle-dependent Weighting Factor</a></div> <div class="author"> D. Xia, P. Song, X. Li, and <span class="more-authors" title="click to view 6 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '6 more authors' ? 'J. Tan, C. Xie, Shaowen Wang, K. Liu, B. Zhao, S. Mao' : '6 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">6 more authors</span> </div> <div class="periodical"> <em>Journal of Ocean University of China</em>, 2022 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.1007/s11802-022-4956-8" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xia2022tdfwi</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Time Domain Full Waveform Inversion Based on Gradient Preconditioning with an Angle-dependent Weighting Factor}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xia, D. and Song, P. and Li, X. and Tan, J. and Xie, C. and Wang, Shaowen and Liu, K. and Zhao, B. and Mao, S.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Journal of Ocean University of China}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1007/s11802-022-4956-8}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> <h2 class="bibliography">2021</h2> <ol class="bibliography"> <li> <div class="row" data-year="2021" data-cat="Journal Articles" data-venue="Oil Geophysical Prospecting" data-abbr="OGP"> <div id="wang2021boundary" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.13810/j.cnki.issn.1000-7210.2021.03.007" target="_blank" rel="noopener noreferrer">Gaussian-type Weighted Hybrid Absorbing Boundary for Elastic Wave Simulation and its Acceleration on GPU</a></div> <div class="author"> <em>Shaowen Wang</em>, P. Song, J. Tan, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '3 more authors' ? 'C. Xie, S. Mao, Q. Wang' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>Oil Geophysical Prospecting</em>, 2021 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.13810/j.cnki.issn.1000-7210.2021.03.007" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">wang2021boundary</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Gaussian-type Weighted Hybrid Absorbing Boundary for Elastic Wave Simulation and its Acceleration on GPU}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Wang, Shaowen and Song, P. and Tan, J. and Xie, C. and Mao, S. and Wang, Q.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Oil Geophysical Prospecting}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.13810/j.cnki.issn.1000-7210.2021.03.007}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2021" data-cat="Journal Articles" data-venue="Frontiers in Earth Science" data-abbr="FES"> <div id="xie2021anglertm" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.3389/feart.2021.732123" target="_blank" rel="noopener noreferrer">Angle-weighted Reverse Time Migration with Wavefield Decomposition Based on the Optical Flow Vector</a></div> <div class="author"> C. Xie, P. Song, X. Li, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '3 more authors' ? 'J. Tan, Shaowen Wang, B. Zhao' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>Frontiers in Earth Science</em>, 2021 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.3389/feart.2021.732123" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xie2021anglertm</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Angle-weighted Reverse Time Migration with Wavefield Decomposition Based on the Optical Flow Vector}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xie, C. and Song, P. and Li, X. and Tan, J. and Wang, Shaowen and Zhao, B.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Frontiers in Earth Science}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.3389/feart.2021.732123}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row" data-year="2021" data-cat="Journal Articles" data-venue="Frontiers in Earth Science" data-abbr="FES"> <div id="xie2021lsrtm" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.3389/feart.2021.732425" target="_blank" rel="noopener noreferrer">Least-squares Reverse Time Migration using the Gradient Preconditioning Based on Transmitted Wave Energy</a></div> <div class="author"> C. Xie, P. Song, X. Li, and <span class="more-authors" title="click to view 3 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '3 more authors' ? 'J. Tan, Shaowen Wang, B. Zhao' : '3 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">3 more authors</span> </div> <div class="periodical"> <em>Frontiers in Earth Science</em>, 2021 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.3389/feart.2021.732425" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">xie2021lsrtm</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Least-squares Reverse Time Migration using the Gradient Preconditioning Based on Transmitted Wave Energy}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Xie, C. and Song, P. and Li, X. and Tan, J. and Wang, Shaowen and Zhao, B.}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Frontiers in Earth Science}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.3389/feart.2021.732425}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> <h2 class="bibliography">2020</h2> <ol class="bibliography"><li> <div class="row" data-year="2020" data-cat="Journal Articles" data-venue="Applied Geophysics" data-abbr="AG"> <div id="zhang2020swell" class="col-sm-10"> <div class="title"><a href="https://doi.org/10.1007/s11770-020-0825-7" target="_blank" rel="noopener noreferrer">Low-frequency Swell Noise Suppression Based on U-Net</a></div> <div class="author"> R. Zhang, P. Song, B. Liu, and <span class="more-authors" title="click to view 5 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '5 more authors' ? 'X. Zhang, J. Tan, Z. Zou, C. Xie, Shaowen Wang' : '5 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">5 more authors</span> </div> <div class="periodical"> <em>Applied Geophysics</em>, 2020 </div> <div class="periodical"> </div> <div class="links"> <a href="https://doi.org/10.1007/s11770-020-0825-7" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">DOI</a> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">zhang2020swell</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Low-frequency Swell Noise Suppression Based on U-Net}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Zhang, R. and Song, P. and Liu, B. and Zhang, X. and Tan, J. and Zou, Z. and Xie, C. and Wang, Shaowen}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Applied Geophysics}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2020}</span><span class="p">,</span>
+  <span class="na">doi</span> <span class="p">=</span> <span class="s">{10.1007/s11770-020-0825-7}</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li></ol> </div> <style>
+  .pub-sort { margin: 0.5rem 0 1.5rem; flex-wrap: wrap; gap: 0; }
+  .pub-sort .btn { text-transform: none; }
+
+  /* Clean two-line entries: title on its own line, meta + links muted below */
+  .publications ol.bibliography li { margin-bottom: 0.9rem; }
+  .publications .row { margin-bottom: 0; }
+  .publications .row > div[id] { flex: 1; max-width: none; } /* content fills full width */
+
+  /* line 1 — title (primary: larger + bold + full contrast) */
+  .publications ol.bibliography li .title {
+    display: block;
+    font-weight: 700;
+    font-size: 1.15rem;
+    line-height: 1.3;
+    margin-bottom: 0.25rem;
+  }
+  .publications .title a { color: var(--global-text-color); font-weight: 700; }
+  .publications .title a:hover { color: var(--global-theme-color); text-decoration: underline; }
+
+  /* line 2 — authors · venue, year (secondary: small + muted gray) */
+  .publications .author,
+  .publications .periodical { display: inline; font-size: 0.85rem; line-height: 1.45; color: var(--global-text-color-light); }
+  /* your own name: distinct but subordinate — no underline, medium weight, full contrast */
+  .publications ol.bibliography li .author > em { font-style: normal; font-weight: 600; border-bottom: none; color: var(--global-text-color); }
+  .publications .author::after { content: "  ·  "; }
+  .publications .periodical + .periodical { display: none; } /* hide empty 2nd date div */
+
+  /* links */
+  .publications .links { display: inline; margin-left: 0.4rem; }
+  .publications .links .btn {
+    padding: 0 0.45em;
+    font-size: 0.7rem;
+    line-height: 1.7;
+    margin-right: 0.15rem;
+    color: var(--global-theme-color);
+    border: 1px solid var(--global-divider-color);
+    border-radius: 4px;
+  }
+
+  /* year headers */
+  .publications h2.bibliography {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.7rem;
+    padding-bottom: 0.25rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+</style> <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector(".publications");
+    if (!container) return;
+    const lis = Array.from(container.querySelectorAll("ol.bibliography > li"));
+    if (!lis.length) return;
+
+    const venueNames = {
+      "IEEE TGRS": "IEEE Transactions on Geoscience and Remote Sensing",
+      "Geophysics": "Geophysics",
+      "GP": "Geophysical Prospecting",
+      "GJI": "Geophysical Journal International",
+      "CJG": "Chinese Journal of Geophysics",
+      "FES": "Frontiers in Earth Science",
+      "JOUC": "Journal of Ocean University of China",
+      "OGP": "Oil Geophysical Prospecting",
+      "AG": "Applied Geophysics",
+      "EAGE": "EAGE Conference & Exhibition",
+      "SEG": "SEG / IMAGE Annual Meeting",
+      "arXiv": "arXiv preprint",
+    };
+    const catOrder = ["Journal Articles", "Conference Proceedings", "Preprints"];
+    const T = {
+      cats: { "Journal Articles": "期刊论文", "Conference Proceedings": "会议论文", "Preprints": "预印本" },
+      cite: "引用", copied: "已复制", fail: "复制失败", search: "输入关键词搜索",
+    };
+    const sbox = document.getElementById("bibsearch");
+    if (T.search && sbox) sbox.placeholder = T.search;
+
+    const meta = lis.map(function (li) {
+      const row = li.querySelector(".row");
+      const d = (row && row.dataset) || {};
+      return {
+        li: li,
+        year: parseInt(d.year, 10) || 0,
+        cat: d.cat || "Journal Articles",
+        abbr: d.abbr || "",
+        venue: d.venue || d.abbr || "—",
+      };
+    });
+
+    // Drop the original year-grouped markup; we rebuild for every mode.
+    container.querySelectorAll("h2.bibliography, ol.bibliography").forEach(function (n) { n.remove(); });
+
+    function buildGroups(mode) {
+      const bins = {};
+      const push = function (k, m) { (bins[k] = bins[k] || []).push(m); };
+      if (mode === "year") {
+        meta.forEach(function (m) { push(m.year, m); });
+        return Object.keys(bins).sort(function (a, b) { return b - a; })
+          .map(function (y) { return { label: y, items: bins[y] }; });
+      }
+      if (mode === "cat") {
+        meta.forEach(function (m) { push(m.cat, m); });
+        const ordered = catOrder.filter(function (c) { return bins[c]; })
+          .map(function (c) { return { label: T.cats[c] || c, items: bins[c].slice().sort(byYearDesc) }; });
+        Object.keys(bins).filter(function (c) { return catOrder.indexOf(c) === -1; })
+          .forEach(function (c) { ordered.push({ label: T.cats[c] || c, items: bins[c].slice().sort(byYearDesc) }); });
+        return ordered;
+      }
+      // venue: group by abbr, label with full venue name
+      meta.forEach(function (m) { push(m.abbr || m.venue, m); });
+      return Object.keys(bins)
+        .sort(function (a, b) { return bins[b].length - bins[a].length || a.localeCompare(b); })
+        .map(function (k) { return { label: venueNames[k] || k, items: bins[k].slice().sort(byYearDesc) }; });
+    }
+    function byYearDesc(a, b) { return b.year - a.year; }
+
+    function render(mode) {
+      container.innerHTML = "";
+      buildGroups(mode).forEach(function (g) {
+        const h2 = document.createElement("h2");
+        h2.className = "bibliography";
+        h2.textContent = g.label;
+        const ol = document.createElement("ol");
+        ol.className = "bibliography";
+        g.items.forEach(function (m) { ol.appendChild(m.li); });
+        container.appendChild(h2);
+        container.appendChild(ol);
+      });
+      // If a search term is active, re-apply the filter to the new grouping.
+      const sb = document.getElementById("bibsearch");
+      if (sb && sb.value) sb.dispatchEvent(new Event("input"));
+    }
+
+    render("year");
+
+    document.querySelectorAll(".pub-sort [data-sort]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        document.querySelectorAll(".pub-sort [data-sort]").forEach(function (b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+        render(btn.dataset.sort);
+      });
+    });
+
+    // --- "Cite" buttons: copy a ready-to-paste formatted reference ---
+    function field(txt, re) { const m = txt.match(re); return m ? m[1].trim() : ""; }
+    function parseBib(txt) {
+      const authorRaw = field(txt, /author\s*=\s*\{([\s\S]*?)\}/i);
+      const authors = authorRaw.split(/\s+and\s+/).map(function (a) {
+        const p = a.split(",");
+        return p.length === 2 ? p[1].trim() + " " + p[0].trim() : a.trim();
+      }).join(", ");
+      const doi = field(txt, /doi\s*=\s*\{([^}]*)\}/i);
+      const arxiv = field(txt, /arxiv\s*=\s*\{([^}]*)\}/i);
+      const url = field(txt, /url\s*=\s*\{([^}]*)\}/i);
+      return {
+        authors: authors,
+        title: field(txt, /title\s*=\s*\{+([^{}]*?)\}+\s*,/i),
+        venue: field(txt, /journal\s*=\s*\{([^}]*)\}/i) || field(txt, /booktitle\s*=\s*\{([^}]*)\}/i),
+        year: field(txt, /year\s*=\s*\{([^}]*)\}/i),
+        link: doi ? "https://doi.org/" + doi : (arxiv ? "https://arxiv.org/abs/" + arxiv : url),
+      };
+    }
+    function buildCitation(b) {
+      let s = "";
+      if (b.authors) s += b.authors + ". ";
+      if (b.title) s += b.title + ". ";
+      if (b.venue) s += b.venue + ", ";
+      if (b.year) s += b.year + ". ";
+      if (b.link) s += b.link;
+      return s.trim();
+    }
+    async function copyText(text) {
+      try { await navigator.clipboard.writeText(text); return true; }
+      catch (e) {
+        const ta = document.createElement("textarea");
+        ta.value = text; ta.style.position = "fixed"; ta.style.opacity = "0";
+        document.body.appendChild(ta); ta.select();
+        let ok = false; try { ok = document.execCommand("copy"); } catch (e2) {}
+        document.body.removeChild(ta); return ok;
+      }
+    }
+    lis.forEach(function (li) {
+      const links = li.querySelector(".links");
+      const code = li.querySelector(".bibtex code");
+      if (!links || !code) return;
+      const citation = buildCitation(parseBib(code.textContent));
+      if (!citation) return;
+      const btn = document.createElement("a");
+      btn.className = "cite btn btn-sm z-depth-0";
+      btn.setAttribute("role", "button");
+      btn.style.cursor = "pointer";
+      btn.textContent = T.cite;
+      btn.addEventListener("click", async function () {
+        const ok = await copyText(citation);
+        btn.textContent = ok ? T.copied : T.fail;
+        setTimeout(function () { btn.textContent = T.cite; }, 1500);
+      });
+      links.appendChild(btn);
+    });
+  });
+</script> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © 2026 王绍文。网站用 <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> 和 <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> 主题搭建，托管在 <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a> 上。 </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script defer src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6" crossorigin="anonymous"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script async src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script> <script async src="https://badge.dimensions.ai/badge.js"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-research",
+          title: "research",
+          description: "Two directions I am working on right now.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "My publications, grouped by year, type, or venue. Click a title to open the paper.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "Curriculum vitae of Shaowen Wang.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
+        },{id: "nav-gallery",
+          title: "gallery",
+          description: "Photos from conferences and talks, newest first. Click a photo to enlarge.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/gallery/";
+          },
+        },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather/";
+            },},{id: "news-在第-86-届-eage-年会-法国图卢兹-发表了-2-篇隐式-fwi-的会议摘要",
+          title: '在第 86 届 EAGE 年会（法国图卢兹）发表了 2 篇隐式 FWI 的会议摘要。',
+          description: "",
+          section: "News",},{id: "news-two-abstracts-on-implicit-fwi-at-the-86th-eage-annual-conference-amp-amp-exhibition-in-toulouse-france",
+          title: 'Two abstracts on implicit FWI at the 86th EAGE Annual Conference &amp;amp;amp; Exhibition...',
+          description: "",
+          section: "News",},{id: "news-在-image-2025-美国休斯顿-发表会议摘要-accelerating-the-convergence-of-implicit-fwi-and-lsrtm-with-a-field-data-application",
+          title: '在 IMAGE 2025（美国休斯顿）发表会议摘要 Accelerating the convergence of implicit FWI and LSRTM with a...',
+          description: "",
+          section: "News",},{id: "news-abstract-accelerating-the-convergence-of-implicit-fwi-and-lsrtm-with-a-field-data-application-at-image-2025-in-houston",
+          title: 'Abstract Accelerating the convergence of implicit FWI and LSRTM with a field data...',
+          description: "",
+          section: "News",},{id: "news-预印本-target-noise-上线-arxiv-讲的是一种基于预训练的网络初始化方法-用来加快高分辨率学习",
+          title: '预印本 Target Noise 上线 arXiv，讲的是一种基于预训练的网络初始化方法，用来加快高分辨率学习。',
+          description: "",
+          section: "News",},{id: "news-preprint-target-noise-a-pre-training-based-neural-network-initialization-for-efficient-high-resolution-learning-is-on-arxiv",
+          title: 'Preprint Target Noise: a pre-training based neural network initialization for efficient high resolution...',
+          description: "",
+          section: "News",},{id: "news-在第六届-eage-数字化会议-挪威斯塔万格-发表会议摘要-waveform-inversion-and-imaging-using-implicit-neural-representations",
+          title: '在第六届 EAGE 数字化会议（挪威斯塔万格）发表会议摘要 Waveform inversion and imaging using implicit neural representations。',
+          description: "",
+          section: "News",},{id: "news-abstract-waveform-inversion-and-imaging-using-implicit-neural-representations-at-the-sixth-eage-digitalization-conference-in-stavanger-norway",
+          title: 'Abstract Waveform inversion and imaging using implicit neural representations at the Sixth EAGE...',
+          description: "",
+          section: "News",},{id: "news-sweep-的预印本上线-arxiv-了-文档在-sweepx-deepwave-group",
+          title: 'SWEEP 的预印本上线 arXiv 了，文档在 sweepx.deepwave.group。',
+          description: "",
+          section: "News",},{id: "news-the-sweep-preprint-is-on-arxiv-documentation-at-sweepx-deepwave-group",
+          title: 'The SWEEP preprint is on arXiv; documentation at sweepx.deepwave.group.',
+          description: "",
+          section: "News",},{id: "news-在第-87-届-eage-年会-英国阿伯丁-发表了-4-篇会议摘要-详见论文",
+          title: '在第 87 届 EAGE 年会（英国阿伯丁）发表了 4 篇会议摘要，详见论文。',
+          description: "",
+          section: "News",},{id: "news-four-abstracts-at-the-87th-eage-annual-conference-amp-amp-exhibition-in-aberdeen-uk-see-publications",
+          title: 'Four abstracts at the 87th EAGE Annual Conference &amp;amp;amp; Exhibition in Aberdeen, UK...',
+          description: "",
+          section: "News",},{id: "news-论文-implicit-full-waveform-inversion-imaging-在-geophysical-journal-international-正式发表",
+          title: '论文 Implicit full waveform inversion imaging 在 Geophysical Journal International 正式发表。',
+          description: "",
+          section: "News",},{id: "news-our-paper-implicit-full-waveform-inversion-imaging-is-published-in-geophysical-journal-international",
+          title: 'Our paper Implicit full waveform inversion imaging is published in Geophysical Journal International....',
+          description: "",
+          section: "News",},{id: "news-在-image-2026-美国休斯顿-做了-3-个口头报告-都基于哈希编码的神经表示-地震数据插值-das-数据压缩-以及结合扩散模型正则化的隐式-fwi",
+          title: '在 IMAGE 2026（美国休斯顿）做了 3 个口头报告，都基于哈希编码的神经表示：地震数据插值、DAS 数据压缩，以及结合扩散模型正则化的隐式 FWI。',
+          description: "",
+          section: "News",},{id: "news-gave-three-oral-talks-at-image-2026-in-houston-all-built-on-hash-encoded-neural-representations-seismic-data-interpolation-das-data-compression-and-implicit-fwi-with-diffusion-model-regularization",
+          title: 'Gave three oral talks at IMAGE 2026 in Houston, all built on hash-encoded...',
+          description: "",
+          section: "News",},{id: "news-预印本-coarse-to-fine-multi-resolution-hash-encoding-for-implicit-full-waveform-inversion-上线-arxiv-思路是把哈希编码的分辨率层级由粗到细逐步打开-先把长波长背景反演出来-再补高波数细节",
+          title: '预印本 Coarse-to-fine multi-resolution hash encoding for implicit full waveform inversion 上线 arXiv。思路是把哈希编码的分辨率层级由粗到细逐步打开，先把长波长背景反演出来，再补高波数细节。',
+          description: "",
+          section: "News",},{id: "news-preprint-coarse-to-fine-multi-resolution-hash-encoding-for-implicit-full-waveform-inversion-is-on-arxiv-hash-encoding-levels-are-switched-on-from-coarse-to-fine-so-the-long-wavelength-background-is-resolved-before-high-wavenumber-detail",
+          title: 'Preprint Coarse-to-fine multi-resolution hash encoding for implicit full waveform inversion is on arXiv:...',
+          description: "",
+          section: "News",},{id: "teachings-data-science-fundamentals",
+          title: 'Data Science Fundamentals',
+          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/data-science-fundamentals/";
+            },},{id: "teachings-introduction-to-machine-learning",
+          title: 'Introduction to Machine Learning',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/introduction-to-machine-learning/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%73%68%61%6F%77%65%6E.%77%61%6E%67@%6B%61%75%73%74.%65%64%75.%73%61", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/GeophyAI", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=avZKwOsAAAAJ", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/shaowinw", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> </body> </html>
