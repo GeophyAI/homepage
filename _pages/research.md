@@ -21,7 +21,7 @@ Subsurface images are usually obtained in two steps: full-waveform inversion (FW
 
 {% include sweepx_map.liquid %}
 
-<p class="caption">Components marked <i class="fa-solid fa-arrow-up-right-from-square"></i> open their repositories.</p>
+<p class="caption">Components marked <i class="fa-solid fa-arrow-up-right-from-square"></i> open their documentation or code.</p>
 
 SWEEP (Seismic Wave Equation Exploration Platform) is a unified solver framework for differentiable wave physics. Its engine, sweep-solver, covers more than 20 wave equations in 2-D and 3-D with PyTorch, JAX and CUDA backends. Around it, the SWEEPX ecosystem adds packages for multi-GPU job running, seismic I/O, optimization, misfit functions, tomography starting models and neural reparameterization, plus an agent you can ask in plain language.
 

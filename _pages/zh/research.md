@@ -21,7 +21,7 @@ nav: false
 
 {% include sweepx_map.liquid alt="SWEEPX 生态：核心引擎 sweep-solver 及其周边的各个包" %}
 
-<p class="caption">带 <i class="fa-solid fa-arrow-up-right-from-square"></i> 的组件可以点击，跳到对应的代码仓库。</p>
+<p class="caption">带 <i class="fa-solid fa-arrow-up-right-from-square"></i> 的组件可以点击，打开对应的文档或代码仓库。</p>
 
 SWEEP（Seismic Wave Equation Exploration Platform）是一个统一的可微分波动方程求解框架。核心引擎 sweep-solver 支持 20 多种波动方程，2D、3D 都能算，后端有 PyTorch、JAX 和 CUDA。围绕它的 SWEEPX 生态还有多卡任务调度、地震数据读写、优化器、目标函数、层析初始模型、神经网络重参数化这些包，另外还有一个能用大白话提问的助手。
 

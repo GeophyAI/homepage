@@ -3,7 +3,7 @@
 Neutral (grey) pixels have their lightness inverted onto the site's dark palette
 (white -> #1c1c1d page background, light-grey card fill -> darker card, dark text -> light text),
 keeping any faint tint; coloured pixels (teal, orange, logos, ribbon) are kept as they are.
-The teal engine block (with its white text) is left untouched, and the sweep-agent box,
+The teal engine block (with its white text) is left untouched, and the agent box,
 whose fill is pure white like the page, gets the same card shade as the other boxes.
 
 Soft drop shadows around the cards would invert into a glow, so light grey pixels outside the
@@ -21,7 +21,7 @@ BG = 28 / 255          # site dark background #1c1c1d
 TEXT = 0.88            # where near-black text ends up
 GAMMA = 0.55           # <1 stretches the near-white range so cards stay distinct from the page
 ENGINE_BOX = (584, 341, 1016, 561)   # x0, y0, x1, y1 of the teal engine block
-AGENT_BOX = (609, 150, 990, 272)     # sweep-agent box (orange border)
+AGENT_BOX = (609, 150, 990, 272)     # agent box (orange border)
 HALO_RGB = (234, 245, 243)           # light-teal rounded rectangle around the engine block
 
 def disk(r):
@@ -62,10 +62,11 @@ fillc = ndi.binary_opening(fillc, structure=disk(5))   # cuts thin leaks through
 lab, n = ndi.label(fillc)
 sizes = np.bincount(lab.ravel())
 cards = np.isin(lab, [i for i in range(1, n + 1) if sizes[i] > 20000])
+cards = ndi.binary_fill_holes(cards)                  # the text inside: its light gaps are not shadow
 keep = ndi.binary_dilation(cards, structure=disk(3))   # round, like the cards
 orange = (im[..., 0] > 200 / 255) & (im[..., 1] > 100 / 255) & (im[..., 1] < 170 / 255) & (im[..., 2] < 90 / 255)
 ring = np.zeros((H, W), bool); ring[ay0 - 2:ay1 + 3, ax0 - 2:ax1 + 3] = True
-keep |= ndi.binary_fill_holes(orange & ring)          # sweep-agent: everything inside its orange border
+keep |= ndi.binary_fill_holes(orange & ring)          # agent box: everything inside its orange border
 halo = np.linalg.norm(im - np.array(HALO_RGB) / 255.0, axis=2) < 12 / 255
 lab, n = ndi.label(halo)
 halo = ndi.binary_dilation(ndi.binary_fill_holes(lab == (np.argmax(np.bincount(lab.ravel())[1:]) + 1)), iterations=1)
