@@ -48,6 +48,7 @@ cv:
         end_date: 2018
 
     journal_articles:
+      - "L. Wang, **Shaowen Wang**, F. Min, T. Alkhalifah (2026). **[G²IFWI: Gradient-Coupled Diffusion Priors for Regularizing Implicit Full Waveform Inversion](https://doi.org/10.1029/2026JH001488)**. *Journal of Geophysical Research: Machine Learning and Computation*."
       - "**Shaowen Wang**, T. Alkhalifah (2026). **[Implicit Full Waveform Inversion Imaging](https://doi.org/10.1093/gji/ggag277)**. *Geophysical Journal International*."
       - "**Shaowen Wang**, J. Tan, P. Song, B. He, Q. Wang, G. Du (2024). **[Deep Learning for Noise Attenuation from the Ocean Bottom Node 4C Data](https://doi.org/10.1111/1365-2478.13336)**. *Geophysical Prospecting*."
       - "J. Tan, J. Wang, P. Song, **Shaowen Wang**, D. Xia, G. Du, Q. Wang (2024). **[Surface-related Multiple Prediction for Ocean-bottom Node Data Based on Demigration using Downgoing Wave Imaging Data](https://doi.org/10.1111/1365-2478.13359)**. *Geophysical Prospecting*."
@@ -115,7 +116,7 @@ design:
     connections:
       space_between_connections: 0.35cm
   section_titles:
-    space_above: 0.6cm
+    space_above: 0.5cm
     space_below: 0.3cm
   sections:
     space_between_regular_entries: 1em
