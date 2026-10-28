@@ -114,6 +114,9 @@
             {{- author.first }}
             {{ author_last_html -}}
           </em>
+          {%- if entry.corresponding -%}
+            <sup class="corr" title="{% if page.lang == 'zh-CN' %}通讯作者{% else %}Corresponding author{% endif %}">*</sup>
+          {%- endif -%}
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">

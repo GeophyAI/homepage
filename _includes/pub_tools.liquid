@@ -2,14 +2,17 @@
 UI strings switch on page.lang; category keys stay English (they come from data-cat in _layouts/bib.liquid). {%- endcomment -%}
 {%- if page.lang == 'zh-CN' -%}
   {%- assign t_aria = '论文排序' -%}{%- assign t_year = '按年份' -%}{%- assign t_type = '按类型' -%}{%- assign t_venue = '按期刊' -%}
+  {%- assign t_corr = '通讯作者' -%}
 {%- else -%}
   {%- assign t_aria = 'Sort publications' -%}{%- assign t_year = 'By year' -%}{%- assign t_type = 'By type' -%}{%- assign t_venue = 'By venue' -%}
+  {%- assign t_corr = 'Corresponding author' -%}
 {%- endif %}
 <div class="pub-sort btn-group btn-group-sm" role="group" aria-label="{{ t_aria }}">
   <button type="button" class="btn btn-outline-primary active" data-sort="year">{{ t_year }}</button>
   <button type="button" class="btn btn-outline-primary" data-sort="cat">{{ t_type }}</button>
   <button type="button" class="btn btn-outline-primary" data-sort="venue">{{ t_venue }}</button>
 </div>
+<p class="pub-legend"><sup>*</sup> {{ t_corr }}</p>
 
 <div class="publications">
 
@@ -40,8 +43,10 @@ UI strings switch on page.lang; category keys stay English (they come from data-
   /* line 2 — authors · venue, year (secondary: small + muted gray) */
   .publications .author,
   .publications .periodical { display: inline; font-size: 0.85rem; line-height: 1.45; color: var(--global-text-color-light); }
-  /* your own name: distinct but subordinate — no underline, medium weight, full contrast */
-  .publications ol.bibliography li .author > em { font-style: normal; font-weight: 600; border-bottom: none; color: var(--global-text-color); }
+  /* your own name: regular weight (bold would compete with the title), set apart by full contrast */
+  .publications ol.bibliography li .author > em { font-style: normal; font-weight: 400; border-bottom: none; color: var(--global-text-color); }
+  .publications .author sup.corr { color: var(--global-text-color); margin-left: 1px; cursor: help; }
+  .pub-legend { font-size: 0.8rem; color: var(--global-text-color-light); margin: -0.9rem 0 1.2rem; }
   .publications .author::after { content: "  ·  "; }
   .publications .periodical + .periodical { display: none; } /* hide empty 2nd date div */
 
